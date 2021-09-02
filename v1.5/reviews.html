@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+
+	<title>Reviews</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/taiLib.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="wrapper" id="js-wrapper">
+
+	<div class="header">
+		<div class="header__inner">
+
+			<div class="header-phone header-phone_inner">
+				<div class="header-phone__text">Контакты</div>
+				<a href="tel:+79867584346" class="header-phone__tel">+7 (986) 758-43-46</a>
+			</div>
+			<!-- /.header-phone -->
+
+			<div class="header-consult">
+				Консультация онлайн
+				<a href="ajax/callback.html" data-ajax class="header-consult__link"></a>
+			</div>
+			<!-- /.header-consult -->
+
+			<div class="logo logo_inner">
+				<a href="#" class="logo__link">
+					<img
+						src="images/logo.png"
+						alt="" class="logo__pic">
+					<span class="logo__text">Первый Ювелирный</span>
+					<span class="logo__info">ломбард</span>
+				</a>
+			</div>
+			<!-- /.logo -->
+
+			<div class="header-address header-address_inner">
+				14 отделений <span>в Москве</span>
+				<a href="#" class="header-address__link"></a>
+			</div>
+			<!-- /.header-address -->
+
+			<div class="header-auth">
+				Кабинет
+				<a href="ajax/auth.html" data-ajax data-trigger="auth" class="header-auth__link"></a>
+			</div>
+			<!-- /.header-auth -->
+
+			<div class="menu-header menu-header_inner">
+				<div class="menu-header__burger" id="js-menu-header__burger">
+					<span><i></i></span>
+				</div>
+				<!-- /.menu-header__burger -->
+				<div class="menu-header__overlay" id="js-menu-header__overlay"></div>
+				<div class="menu-header__section" id="js-menu-header__section">
+					<div class="menu-header__slide">
+						<div class="menu-header__scroll">
+
+							<div class="menu-header__field">
+
+								<div class="menu-header__header">
+									<div class="menu-header__photo">
+										<img src="images/menu-header__pic1.jpg" alt="" class="menu-header__pic">
+									</div>
+									<div class="menu-header__desc">
+										<div class="menu-header__title">Главная страница</div>
+										Все сервисы Первого Ювелирного
+									</div>
+									<a href="#" class="menu-header__forward"></a>
+								</div>
+								<!-- /.menu-header__header -->
+								<div class="menu-header__menu">
+									<a href="#" class="menu-header__link">Филиалы</a>
+									<a href="#" class="menu-header__link active">Контакты</a>
+									<a href="#" class="menu-header__link">Кабинет</a>
+								</div>
+								<!-- /.menu-header__menu -->
+
+							</div>
+							<!-- /.menu-header__field -->
+
+							<div class="menu-header__field">
+
+								<div class="menu-header__header">
+									<div class="menu-header__photo">
+										<img src="images/menu-header__pic2.jpg" alt="" class="menu-header__pic">
+									</div>
+									<div class="menu-header__desc">
+										<div class="menu-header__title">Магазин ювелирных изделий</div>
+										Скидки до 50% при покупке онлайн
+									</div>
+									<a href="#" class="menu-header__forward"></a>
+								</div>
+								<!-- /.menu-header__header -->
+								<div class="menu-header__menu">
+									<a href="#" class="menu-header__link">Каталог товаров</a>
+									<a href="#" class="menu-header__link">Акции</a>
+									<a href="#" class="menu-header__link">Франшиза</a>
+									<a href="#" class="menu-header__link">Новости</a>
+								</div>
+								<!-- /.menu-header__menu -->
+								<div class="menu-header__basket">
+									<a href="#" class="menu-header__forward">У вас 6 товаров в корзине</a>
+								</div>
+								<!-- /.menu-header__basket -->
+
+							</div>
+							<!-- /.menu-header__field -->
+
+							<div class="menu-header__field gold">
+
+								<div class="menu-header__header">
+									<div class="menu-header__photo">
+										<img src="images/menu-header__pic3.jpg" alt="" class="menu-header__pic">
+									</div>
+									<div class="menu-header__desc">
+										<div class="menu-header__title">Ломбард</div>
+										Займы, любое движимое имущество
+									</div>
+									<a href="#" class="menu-header__forward"></a>
+								</div>
+								<!-- /.menu-header__header -->
+								<div class="menu-header__menu">
+									<a href="#" class="menu-header__link">Займ</a>
+									<a href="#" class="menu-header__link">Ювелирный калькулятор</a>
+									<a href="#" class="menu-header__link">Авто</a>
+									<a href="#" class="menu-header__link">VIP</a>
+									<a href="#" class="menu-header__link">Техника</a>
+									<a href="#" class="menu-header__link">Франшиза</a>
+								</div>
+								<!-- /.menu-header__menu -->
+
+							</div>
+							<!-- /.menu-header__field -->
+
+							<div class="menu-header__field gold">
+
+								<div class="menu-header__header">
+									<div class="menu-header__photo">
+										<img src="images/menu-header__pic4.jpg" alt="" class="menu-header__pic">
+									</div>
+									<div class="menu-header__desc">
+										<div class="menu-header__title">Драгоценные металлы</div>
+										Скупка и продажа для юридических лиц
+									</div>
+									<a href="#" class="menu-header__forward"></a>
+								</div>
+								<!-- /.menu-header__header -->
+								<div class="menu-header__menu">
+									<a href="#" class="menu-header__link">Скупка металлов</a>
+									<a href="#" class="menu-header__link">Продажа</a>
+									<a href="#" class="menu-header__link">Документы</a>
+									<a href="#" class="menu-header__link">Правила приёма</a>
+									<a href="#" class="menu-header__link">Доставка и перевозка </a>
+									<a href="#" class="menu-header__link">Партнеры</a>
+								</div>
+								<!-- /.menu-header__menu -->
+
+							</div>
+							<!-- /.menu-header__field -->
+
+						</div>
+					</div>
+				</div>
+				<!-- /.menu-header__section -->
+			</div>
+			<!-- /.menu-header -->
+
+		</div>
+		<!-- /.header__inner -->
+	</div>
+	<!-- /.header -->
+
+	<div class="header-bottom">
+		<div class="header-bottom__inner">
+			<div class="header-bottom__row">
+				<div class="header-bottom__col">
+
+					<nav class="menu-horiz">
+						<ul class="menu-horiz__list">
+							<li class="menu-horiz__item active">
+								<a href="#" class="menu-horiz__link">Получить заём</a>
+							</li>
+							<li class="menu-horiz__item">
+								<a href="#" class="menu-horiz__link">Скупка золота</a>
+							</li>
+							<li class="menu-horiz__item menu-horiz__item_brilliants-mobile">
+								<a href="#" class="menu-horiz__link">Бриллианты</a>
+							</li>
+						</ul>
+						<!-- /.menu-horiz__list -->
+					</nav>
+					<!-- /.menu-horiz -->
+
+				</div>
+				<div class="header-bottom__col">
+
+					<nav class="menu-horiz">
+						<ul class="menu-horiz__list">
+							<li class="menu-horiz__item menu-horiz__item_brilliants">
+								<a href="#" class="menu-horiz__link">Бриллианты</a>
+							</li>
+							<li class="menu-horiz__item menu-horiz__item_franchise">
+								<a href="#" class="menu-horiz__link">Франшиза</a>
+							</li>
+							<li class="menu-horiz__item menu-horiz__item_right">
+								<a href="#" class="menu-horiz__link">Отзывы</a>
+							</li>
+						</ul>
+						<!-- /.menu-horiz__list -->
+					</nav>
+					<!-- /.menu-horiz -->
+
+					<!--					</div> -->
+				</div>
+				<!-- /.header-bottom__row -->
+			</div>
+		</div>
+	</div>
+	<!-- /.header-bottom -->
+
+	<div class="middle">
+		<div class="middle__container">
+
+			<div class="content">
+
+				<!--start breadcrumbs-->
+				<div class="breadcrumbs">
+					<div class="container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="#">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">Ломбард «Аэропорт»</li>
+						</ul>
+					</div>
+				</div>
+				<!--end breadcrumbs-->
+
+				<!--start reviews-->
+				<div class="reviews">
+					<div class="container">
+						<div class="page-title">67 отзывов от довольных клиентов</div>
+						<div class="reviews__row">
+							<div class="reviews__col">
+								<div class="reviews__item reviews__item_form">
+									<div class="reviews__form">
+										<div class="reviews__title reviews__title_tablet">Хотите оставить свой? <span>Напишите:</span>
+										</div>
+										<form>
+											<input type="text" class="form-inputs" placeholder="Имя">
+											<input type="email" class="form-inputs" placeholder="Email">
+											<input type="text" class="form-inputs" placeholder="Текст отзыва">
+											<button type="submit" class="reviews__submit">Отправить отзыв</button>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__col">
+								<div class="reviews__item">
+									<div class="reviews__title reviews__title_hide">Или просто позвоните</div>
+									<div class="reviews__call">
+										<div class="reviews__call-inner">
+											<a class="reviews__number" href="tel:+74952120674">(495) 212 06 74</a>
+											<a href="#" class="reviews__other"><span>Другие способы связи</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__row">
+							<div class="reviews__col reviews__col_mobile">
+								<div class="reviews__block">
+									<div class="reviews__block-inner">
+										<div class="reviews__text js-reviews__text">
+											Хотел бы поблагодарить Новикову И.Ю. за квалифицированное
+											обслуживание и просто человеческое отношение, кроме того
+											настоятельно требую повысить её в должности, это не шутка!).
+											Так же хочу выразить благодарность вашей сети Ломбардов, просто
+											за то, что вы есть, и помогаете людям в трудных ситуациях. Я доволен
+											абсолютно всем, как и условиями, так уровнем честности к вашим
+											потенциальным клиентам, потому что моё изделие у меня в городе
+											(в подмосковье), даже взвесили не верно, занизив его рыночную
+											стоимость, а про Скупку я вообще молчу... Приятно, что у нас остались
+											ещё честные люди в стране, которым можно доверить самое
+											драгоценное. Желаю вам всего самого наилучшего.
+											Спасибо!
+										</div>
+									</div>
+									<div class="reviews__desc">
+										<div class="reviews__name">Говорит Сергей</div>
+										<div class="reviews__date">8 июля 2017 00:38</div>
+										<button type="button" class="reviews__view js-reviews__view">Прочитать отзыв
+											целиком
+										</button>
+									</div>
+								</div>
+								<div class="reviews__block">
+									<div class="reviews__block-inner">
+										<div class="reviews__text js-reviews__text">
+											Очень приятный и опытный эксперт Ольга помогла мне быстро
+											решить мою проблему. Этот ломбард посоветовал знакомый – как-то
+											он сюда обращался. Вот и у меня случилась ситуация: срочно
+											понадобились деньги, надо было заплатить взнос за ипотеку.
+											Оформила заявку на сайте – сразу перезвонили, проконсультировали,
+											потом приехала на Профсоюзную, оставила свои украшения под
+											залог и получила сразу деньги. Один раз пришлось продлить
+											договор, позвонила, предупредила, одобрили сразу! Оперативно
+											работают, что и говорить. Очень советую!
+										</div>
+									</div>
+									<div class="reviews__desc">
+										<div class="reviews__name">Хвалит нас Татьяна</div>
+										<div class="reviews__date">8 июля 2017 00:38</div>
+										<button type="button"
+												class="reviews__view js-reviews__view reviews__view_color">
+											Прочитать
+											отзыв целиком
+										</button>
+									</div>
+								</div>
+								<div class="reviews__block">
+									<div class="reviews__block-inner">
+										<div class="reviews__text">
+											Неделю назад истек срок по выкупу, но возникли некие сложности,
+											позвонил, попросил придержать колечки на пару дней, Огромное
+											спасибо, что вошли в положение и пошли на уступки! Выкупил
+											через 2 дня, все в отличном состоянии. если возникнет потребность,
+											буду обращаться только сюда!
+										</div>
+									</div>
+									<div class="reviews__desc">
+										<div class="reviews__name">Благодарит Алексей</div>
+										<div class="reviews__date">8 июля 2017 00:38</div>
+										<button type="button"
+												class="reviews__view js-reviews__view reviews__view_color">
+											Прочитать
+											отзыв целиком
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__col reviews__col_mobile">
+								<div class="reviews__block">
+									<div class="reviews__block-inner">
+										<div class="reviews__text">
+											Неделю назад истек срок по выкупу, но возникли некие сложности,
+											позвонил, попросил придержать колечки на пару дней, Огромное
+											спасибо, что вошли в положение и пошли на уступки! Выкупил
+											через 2 дня, все в отличном состоянии. если возникнет потребность,
+											буду обращаться только сюда!
+										</div>
+									</div>
+									<div class="reviews__desc">
+										<div class="reviews__name">Благодарит Алексей</div>
+										<div class="reviews__date">8 июля 2017 00:38</div>
+										<button type="button"
+												class="reviews__view js-reviews__view reviews__view_color">
+											Прочитать
+											отзыв целиком
+										</button>
+									</div>
+								</div>
+								<div class="reviews__block">
+									<div class="reviews__block-inner">
+										<div class="reviews__text">
+											Очень приятный и опытный эксперт Ольга помогла мне быстро
+											решить мою проблему. Этот ломбард посоветовал знакомый – как-то
+											он сюда обращался. Вот и у меня случилась ситуация: срочно
+											понадобились деньги, надо было заплатить взнос за ипотеку.
+											Оформила заявку на сайте – сразу перезвонили, проконсультировали,
+											потом приехала на Профсоюзную, оставила свои украшения под
+											залог и получила сразу деньги. Один раз пришлось продлить
+											договор, позвонила, предупредила, одобрили сразу! Оперативно
+											работают, что и говорить. Очень советую!
+										</div>
+									</div>
+									<div class="reviews__desc">
+										<div class="reviews__name">Хвалит нас Татьяна</div>
+										<div class="reviews__date">8 июля 2017 00:38</div>
+										<button type="button"
+												class="reviews__view js-reviews__view reviews__view_color">
+											Прочитать
+											отзыв целиком
+										</button>
+									</div>
+								</div>
+								<div class="reviews__block">
+									<div class="reviews__block-inner">
+										<div class="reviews__text">
+											Хотел бы поблагодарить Новикову И.Ю. за квалифицированное
+											обслуживание и просто человеческое отношение, кроме того
+											настоятельно требую повысить её в должности, это не шутка!).
+											Так же хочу выразить благодарность вашей сети Ломбардов, просто
+											за то, что вы есть, и помогаете людям в трудных ситуациях. Я доволен
+											абсолютно всем, как и условиями, так уровнем честности к вашим
+											потенциальным клиентам, потому что моё изделие у меня в городе
+											(в подмосковье), даже взвесили не верно, занизив его рыночную
+											стоимость, а про Скупку я вообще молчу... Приятно, что у нас остались
+											ещё честные люди в стране, которым можно доверить самое
+											драгоценное. Желаю вам всего самого наилучшего.
+											Спасибо!
+										</div>
+									</div>
+									<div class="reviews__desc">
+										<div class="reviews__name">Говорит Сергей</div>
+										<div class="reviews__date">8 июля 2017 00:38</div>
+										<button type="button"
+												class="reviews__view js-reviews__view reviews__view_color">
+											Прочитать
+											отзыв целиком
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__more">
+							<a href="#">Показать еще</a>
+						</div>
+
+					</div>
+					<!--end reviews-->
+				</div>
+				<!--end reviews-->
+
+			</div>
+			<!-- /.content -->
+
+		</div>
+		<!-- /.middle__container -->
+	</div>
+	<!-- /.middle -->
+
+</div>
+<!-- /.wrapper -->
+
+</body>
+</html>

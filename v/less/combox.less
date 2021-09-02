@@ -1,0 +1,117 @@
+.combox {
+	line-height: 1;
+	position: relative;
+	.size(100%, 46px);
+	font-size: 16px;
+
+	&.active {
+		z-index: 1;
+	}
+
+	&__section {
+		background: #fff;
+		position: relative;
+		border: 1px solid rgb(229, 229, 229);
+	}
+
+	&:hover &__section {
+		border: 1px solid rgb(226, 226, 226);
+		color: #000;
+	}
+
+	&__section:active {
+		border: 1px solid #fff;
+	}
+
+	&.active &__section {
+		border: 1px solid #fff;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		.box-shadow(0 5px 30px rgba(0, 0, 0, 0.08));
+	}
+
+	&__title {
+		.size(100%, 46px);
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		color: rgb(61, 61, 61);
+		font-weight: 400;
+		padding: 0 29px;
+		position: relative;
+
+		&:after {
+			pointer-events: none;
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			content: '';
+			position: absolute;
+			right: 20px;
+			margin: -8px 0 0;
+			top: 50%;
+			content: "\f107";
+			font-size: 18px;
+		}
+
+		&.selected {
+			font-weight: bold;
+		}
+	}
+
+	&:hover &__title {
+		color: rgb(0, 0, 0);
+	}
+
+	&.active &__title {
+		font-weight: bold;
+		color: #000;
+	}
+
+	&__list {
+		list-style: none;
+		padding: 14px 0 25px 17px;
+		display: none;
+		border-top: 1px solid rgb(237, 237, 237);
+		margin: 0 12px;
+	}
+
+	&.active &__list {
+		display: block;
+	}
+
+	&__label {
+		color: rgb(100, 100, 100);
+		font-weight: 400;
+		cursor: pointer;
+		display: block;
+		padding: 6px 0;
+		position: relative;
+
+		&:hover {
+			color: rgb(235, 157, 0);
+		}
+	}
+
+	&__radio:checked ~ &__text {
+		color: rgb(0, 0, 0);
+	}
+
+	&__item.active &__label {
+		color: #000;
+	}
+
+	&__radio {
+		visibility: hidden;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	&__text {
+	}
+}

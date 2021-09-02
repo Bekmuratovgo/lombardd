@@ -1,0 +1,142 @@
+.basket-response {
+	width: 644px;
+	box-shadow: 0 5px 46px rgba(0, 0, 0, 0.18);
+	background-color: #ffffff;
+	padding: 40px 70px;
+	line-height: 1;
+	overflow: hidden;
+
+	.xs({
+		width: 300px;
+		padding: 30px 20px;
+	});
+
+	&__inner {
+	}
+
+	&__title {
+		color: #000000;
+		font-family: Arsenal;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 36.21px;
+		letter-spacing: 0.09px;
+		margin-bottom: 20px;
+
+		.xs({
+			font-size: 22px;
+			line-height: 25px;
+		});
+	}
+
+	&__info {
+		margin-bottom: 25px;
+		max-width: 345px;
+		font-family: Arsenal;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 28px;
+		color: rgb(0, 0, 0);
+
+		span {
+			color: rgb(221, 1, 1);
+		}
+	}
+
+	&__slider {
+		margin: 0 -70px;
+		padding: 0 70px;
+		border-bottom: 1px solid #f1f1f1;
+		margin-bottom: 25px;
+
+		.xs({
+			margin: 0 -20px 15px;
+			padding: 0 20px;
+		});
+	}
+
+	&__thumb {
+		max-width: 200px;
+		padding: 0;
+	}
+
+	&__total {
+		display: flex;
+		justify-content: flex-start;
+		align-items: baseline;
+		margin-bottom: 50px;
+
+		.xs({
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+		});
+	}
+
+	&__total-text {
+		color: #d5d5d5;
+		font-family: Arsenal;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 27.43px;
+		letter-spacing: 0.09px;
+		margin-right: 5px;
+	}
+
+	&__total-summ {
+		color: #ee0707;
+		font-family: Arsenal;
+		font-size: 29px;
+		font-weight: 700;
+		line-height: 34.72px;
+		margin-right: 35px;
+
+		.xs({
+			font-size: 25px;
+		});
+	}
+
+	&__total-smalltext {
+		color: #d5d5d5;
+		font-family: Arsenal;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 20.09px;
+		letter-spacing: 0.09px;
+		margin-right: 5px;
+	}
+
+	&__total-summold {
+		color: #292929;
+		font-family: Arsenal;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 23.73px;
+	}
+
+	&__submit {
+		max-width: 318px;
+		width: 100%;
+		height: 64px;
+		background-color: #ee0707;
+		background-image: linear-gradient(35deg, rgba(245, 233, 233, 0.12) 0%, rgba(23, 23, 23, 0.12) 100%);
+		margin: 17px 0 0;
+		color: #fffafa;
+		font-family: Arsenal;
+		font-size: 22px;
+		font-weight: 700;
+		border: none;
+		transition: background 300ms;
+
+		&:hover {
+			background-color: #ff1616;
+			background-image: -webkit-linear-gradient(left, rgba(197, 23, 0, 0.21) 0%, rgba(244, 5, 5, 0) 100%);
+			background-image: -o-linear-gradient(left, rgba(197, 23, 0, 0.21) 0%, rgba(244, 5, 5, 0) 100%);
+			background-image: linear-gradient(to right, rgba(197, 23, 0, 0.21) 0%, rgba(244, 5, 5, 0) 100%);
+		}
+
+		.xs({
+			margin-top: 5px;
+			margin-bottom: 10px;
+		});
+	}
+}

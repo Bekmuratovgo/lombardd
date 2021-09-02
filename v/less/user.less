@@ -1,0 +1,77 @@
+.user {
+
+	&_inline {
+		display: inline-block;
+		text-align: left;
+	}
+
+	&__row {
+	}
+
+	&__photo {
+		width: 115px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&__link {
+		display: block;
+		text-decoration: none;
+	}
+
+	&__pic {
+		display: block;
+		max-width: 115px;
+	}
+
+	&__desc {
+		display: table-cell;
+		vertical-align: middle;
+		color: rgb(30, 30, 30);
+		font-family: Arsenal;
+		font-weight: 700;
+		line-height: 34px;
+		font-size: 20px;
+
+		span {
+			font-size: 26px;
+			display: block;
+		}
+	}
+
+	.maxWidth(991px, {
+		display: inline-block;
+		text-align: left;
+
+		&__desc {
+			font-size: 19px;
+			line-height: 19px;
+
+			span {
+				font-size: 19px;
+				display: inline-block;
+			}
+		}
+	});
+
+	.xs({
+
+		&__photo {
+			width: 95px;
+		}
+
+		&__pic {
+			max-width: 80px;
+		}
+
+		&__desc {
+			font-size: 16px;
+			line-height: 25px;
+
+			span {
+				display: block;
+				font-size: 22px;
+			}
+		}
+	});
+}

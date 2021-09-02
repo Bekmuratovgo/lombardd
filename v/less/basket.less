@@ -1,0 +1,65 @@
+.basket {
+	max-width: 1140px;
+	padding: 0 45px;
+	margin: 10px auto 0;
+	position: relative;
+
+	.minWidth(992px, {
+		margin-top: 44px;
+
+		&:after {
+			background-color: rgb(242, 242, 242);
+			width: 1px;
+			height: 150%;
+			position: absolute;
+			left: 53.7%;
+			content: '';
+			top: 0;
+		}
+	});
+
+	.xs({
+		margin-top: 10px;
+		padding: 0 20px;
+	});
+
+	&__inner {
+	}
+
+	&__row {
+		.clearfix();
+	}
+
+	&__col {
+
+		&_price {
+			float: right;
+			width: 42%;
+		}
+
+		&_form {
+			width: 50%;
+			float: left;
+		}
+
+		&_address {
+			clear: right;
+			float: right;
+			width: 42%;
+		}
+
+		.maxWidth(991px, {
+
+			&_price,
+			&_form,
+			&_address {
+				float: none;
+				width: 100%;
+			}
+
+			&_form {
+				max-width: 523px;
+			}
+		});
+	}
+}

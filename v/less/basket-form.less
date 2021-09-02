@@ -1,0 +1,279 @@
+.basket-form {
+
+	.maxWidth(991px, {
+		margin-bottom: 50px;
+	});
+
+	.xs({
+		margin-bottom: 30px;
+	});
+
+	&__form {
+	}
+
+	&__top {
+	}
+
+	&__slider {
+		height: 64px;
+		position: relative;
+
+		&:before {
+			width: 100%;
+			height: 1px;
+			left: 0;
+			position: absolute;
+			content: '';
+			bottom: 0;
+			background-color: rgb(212, 6, 6);
+			background-image: -webkit-linear-gradient(left, rgb(255, 181, 25) 0%, rgb(198, 136, 3) 100%);
+			background-image: -o-linear-gradient(left, rgb(255, 181, 25) 0%, rgb(198, 136, 3) 100%);
+			background-image: linear-gradient(to right, rgb(255, 181, 25) 0%, rgb(198, 136, 3) 100%);
+		}
+
+		.xs({
+			width: 166px;
+			margin: 0 auto;
+		});
+	}
+
+	&__handle {
+		height: 46px;
+		.background-image(linear-gradient(180deg, #ce8e05 0%, #db9708 100%));
+		position: absolute;
+		left: 0;
+		top: 0;
+		cursor: pointer;
+		z-index: 1;
+
+		&:after {
+			position: absolute;
+			left: 50%;
+			bottom: -11px;
+			margin-left: -10px;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-top: 12px solid #db9708;
+			content: '';
+		}
+
+		&:hover {
+			.background-image(linear-gradient(180deg, #df9f13 0%, #eca916 100%));
+
+			&:after {
+				border-top: 12px solid #eca916;
+			}
+		}
+
+		&-text {
+			color: rgb(255, 255, 255);
+			font-family: Arsenal;
+			font-size: 26px;
+			font-weight: 700;
+			line-height: 1;
+			padding: 10px 25px;
+		}
+
+		&-minus {
+			width: 30px;
+			height: 100%;
+			position: absolute;
+			left: -30px;
+			top: 0;
+			cursor: pointer;
+
+			&:before {
+				height: 3px;
+				width: 20px;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				margin-top: -1.5px;
+				content: '';
+				background-color: rgb(218, 218, 218);
+			}
+
+			&:hover:before {
+				background: rgb(237, 172, 37);
+			}
+		}
+
+		&-plus {
+			width: 30px;
+			height: 100%;
+			position: absolute;
+			cursor: pointer;
+			right: -30px;
+			top: 0;
+
+			&:before {
+				height: 3px;
+				width: 20px;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				margin-top: -1.5px;
+				content: '';
+				background-color: rgb(218, 218, 218);
+			}
+
+			&:after {
+				width: 3px;
+				height: 20px;
+				position: absolute;
+				right: 8.5px;
+				top: 50%;
+				margin-top: -10px;
+				content: '';
+				background-color: rgb(218, 218, 218);
+			}
+
+			&:hover:before,
+			&:hover:after {
+				background: rgb(237, 172, 37);
+			}
+		}
+	}
+
+	&__range {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__price {
+		width: 100%;
+		background-color: rgb(243, 243, 243);
+		background-image: linear-gradient(36deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 100%);
+		color: rgb(205, 204, 204);
+		font-family: Arsenal;
+		font-size: 26px;
+		font-weight: 700;
+		line-height: 34px;
+		text-align: center;
+		padding: 22px 0;
+		margin-bottom: 17px;
+
+
+		span {
+			color: rgb(196, 141, 22);
+			font-family: Arsenal;
+			font-size: 34px;
+			font-weight: 700;
+			margin-left: 10px;
+		}
+
+		.xs({
+			font-size: 18px;
+			padding: 10px 0 20px;
+			line-height: 26px;
+
+			span {
+				display: block;
+			}
+		});
+	}
+
+	&__row {
+		margin: 0 -6px;
+		.clearfix();
+	}
+
+	&__col {
+		width: 100%;
+		float: left;
+		padding: 0 6px;
+
+		&_half {
+			width: 50%;
+
+			.xs({
+				width: 100%;
+			});
+		}
+	}
+
+	&__input {
+		width: 100%;
+		height: 46px;
+		margin-bottom: 17px;
+		font-size: 16px;
+		padding: 0 30px;
+		font-weight: bold;
+
+		.xs({
+			padding: 0 20px;
+		});
+	}
+
+	&__line {
+		margin: 13px 0 30px;
+		border-bottom: 1px solid rgb(243, 243, 243);
+
+		.xs({
+			margin: 0 0 17px;
+		});
+	}
+
+	&__select {
+		width: 200px;
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 37px;
+		margin-right: 9px;
+		position: relative;
+
+		&_pay {
+			width: 252px;
+		}
+
+		.xs({
+			width: 100%;
+			margin-bottom: 17px;
+		});
+	}
+
+	&__submit {
+		.size(422 / 523 * 100%, 82px);
+		border: none;
+		color: #000;
+		font-family: Arsenal;
+		font-size: 26px;
+		font-weight: 700;
+		margin-bottom: 10px;
+		text-align: center;
+		.btn-2();
+
+		.xs({
+			font-size: 20px;
+			width: 100%;
+			height: 73px;
+		});
+	}
+
+	&__oferta {
+		.size(422 / 523 * 100%, auto);
+		padding: 0 0 0 15px;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+		color: rgb(192, 192, 192);
+
+		a {
+			color: rgb(140, 140, 140);
+			border-bottom: 1px solid #ececec;
+			text-decoration: none;
+
+			&:hover {
+				border-bottom-color: #cecece;
+			}
+		}
+
+		.xs({
+			width: 100%;
+			padding: 0;
+		});
+	}
+}

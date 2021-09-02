@@ -1,0 +1,123 @@
+.buy {
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -48px;
+	margin-bottom: 60px;
+
+	.page-title{
+		margin-bottom: 46px;
+	}
+
+	&__blocks {
+		display: flex;
+		height: 315px;
+	}
+	&__gold,
+	&__silver,
+	&__platinum {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-size: cover;
+		color: #ffffff;
+		text-align: center;
+	}
+
+	&__gold {
+		flex-grow: 4;
+		font-family: Arsenal;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 50px;
+	}
+
+	&__silver,
+	&__platinum {
+		flex-grow: 1;
+		line-height: 1.2;
+		font-family: Arsenal;
+		font-size: 28px;
+		font-weight: 700;
+	}
+
+	@media (max-width: 1000px) and (min-width: @screen-sm) {
+		margin-bottom: 50px;
+		margin-top: -50px;
+
+		.page-title{
+			display: none;
+		}
+
+		&__blocks {
+			height: 226px;
+		}
+
+		&__gold {
+			font-size: 30px;
+			line-height: 1.2;
+
+		}
+
+		&__silver,
+		&__platinum {
+			font-size: 24px;
+		}
+	}
+
+	@media (max-width: @screen-xs-max) {
+		margin-bottom: 35px;
+		margin-top: -10px;
+
+		.page-title{
+			display: none;
+		}
+
+		&__blocks {
+			flex-direction: column;
+			height: auto;
+		}
+
+		&__gold {
+			height: 144px;
+			font-size: 30px;
+			line-height: 1.2;
+		}
+
+		&__silver,
+		&__platinum {
+			height: 126px;
+			font-size: 24px;
+		}
+	}
+}
+
+.no-webp {
+
+	.buy__gold {
+		background-image: url(../images/web/gold.jpg);
+	}
+
+	.buy__silver {
+		background-image: url(../images/web/silver.jpg);
+	}
+
+	.buy__platinum {
+		background-image: url(../images/web/platinum.jpg);
+	}
+}
+
+.webp {
+
+	.buy__gold {
+		background-image: url(../images/web/gold.webp);
+	}
+
+	.buy__silver {
+		background-image: url(../images/web/silver.webp);
+	}
+
+	.buy__platinum {
+		background-image: url(../images/web/platinum.webp);
+	}
+}

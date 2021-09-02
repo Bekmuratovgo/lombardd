@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+
+	<title>Zalog</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/taiLib.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+
+	<script src="js/lazysizes.min.js" type="text/javascript" async></script>
+
+</head>
+<body>
+
+<div class="wrapper gold" id="js-wrapper">
+
+	<div class="header">
+		<div class="header__inner">
+
+			<div class="header-phone header-phone_inner">
+				<div class="header-phone__text">Контакты</div>
+				<a href="tel:+79867584346" class="header-phone__tel">+7 (986) 758-43-46</a>
+			</div>
+			<!-- /.header-phone -->
+
+			<div class="header-consult">
+				Консультация онлайн
+				<a href="ajax/callback.html" data-ajax class="header-consult__link"></a>
+			</div>
+			<!-- /.header-consult -->
+
+			<div class="logo logo_inner">
+				<a href="#" class="logo__link">
+					<img
+						src="images/logo.png"
+						alt="" class="logo__pic">
+					<span class="logo__text">Первый Ювелирный</span>
+					<span class="logo__info">ломбард</span>
+				</a>
+			</div>
+			<!-- /.logo -->
+
+			<div class="header-address header-address_inner">
+				14 отделений <span>в Москве</span>
+				<a href="#" class="header-address__link"></a>
+			</div>
+			<!-- /.header-address -->
+
+			<div class="header-auth">
+				Кабинет
+				<a href="ajax/auth.html" data-ajax data-trigger="auth" class="header-auth__link"></a>
+			</div>
+			<!-- /.header-auth -->
+
+			<div class="menu-header menu-header_inner">
+				<div class="menu-header__burger" id="js-menu-header__burger">
+					<span><i></i></span>
+				</div>
+				<!-- /.menu-header__burger -->
+				<div class="menu-header__overlay" id="js-menu-header__overlay"></div>
+				<div class="menu-header__section" id="js-menu-header__section">
+					<div class="menu-header__slide">
+						<div class="menu-header__scroll">
+
+							<div class="menu-header__field">
+
+								<div class="menu-header__header">
+									<div class="menu-header__photo">
+										<img src="images/menu-header__pic1.jpg" alt="" class="menu-header__pic">
+									</div>
+									<div class="menu-header__desc">
+										<div class="menu-header__title">Главная страница</div>
+										Все сервисы Первого Ювелирного
+									</div>
+									<a href="#" class="menu-header__forward"></a>
+								</div>
+								<!-- /.menu-header__header -->
+								<div class="menu-header__menu">
+									<a href="#" class="menu-header__link">Филиалы</a>
+									<a href="#" class="menu-header__link active">Контакты</a>
+									<a href="#" class="menu-header__link">Кабинет</a>
+								</div>
+								<!-- /.menu-header__menu -->
+
+							</div>
+							<!-- /.menu-header__field -->
+
+							<div class="menu-header__field">
+
+								<div class="menu-header__header">
+									<div class="menu-header__photo">
+										<img src="images/menu-header__pic2.jpg" alt="" class="menu-header__pic">
+									</div>
+									<div class="menu-header__desc">
+										<div class="menu-header__title">Магазин ювелирных изделий</div>
+										Скидки до 50% при покупке онлайн
+									</div>
+									<a href="#" class="menu-header__forward"></a>
+								</div>
+								<!-- /.menu-header__header -->
+								<div class="menu-header__menu">
+									<a href="#" class="menu-header__link">Каталог товаров</a>
+									<a href="#" class="menu-header__link">Акции</a>
+									<a href="#" class="menu-header__link">Франшиза</a>
+									<a href="#" class="menu-header__link">Новости</a>
+								</div>
+								<!-- /.menu-header__menu -->
+								<div class="menu-header__basket">
+									<a href="#" class="menu-header__forward">У вас 6 товаров в корзине</a>
+								</div>
+								<!-- /.menu-header__basket -->
+
+							</div>
+							<!-- /.menu-header__field -->
+
+							<div class="menu-header__field gold">
+
+								<div class="menu-header__header">
+									<div class="menu-header__photo">
+										<img src="images/menu-header__pic3.jpg" alt="" class="menu-header__pic">
+									</div>
+									<div class="menu-header__desc">
+										<div class="menu-header__title">Ломбард</div>
+										Займы, любое движимое имущество
+									</div>
+									<a href="#" class="menu-header__forward"></a>
+								</div>
+								<!-- /.menu-header__header -->
+								<div class="menu-header__menu">
+									<a href="#" class="menu-header__link">Займ</a>
+									<a href="#" class="menu-header__link">Ювелирный калькулятор</a>
+									<a href="#" class="menu-header__link">Авто</a>
+									<a href="#" class="menu-header__link">VIP</a>
+									<a href="#" class="menu-header__link">Техника</a>
+									<a href="#" class="menu-header__link">Франшиза</a>
+								</div>
+								<!-- /.menu-header__menu -->
+
+							</div>
+							<!-- /.menu-header__field -->
+
+							<div class="menu-header__field gold">
+
+								<div class="menu-header__header">
+									<div class="menu-header__photo">
+										<img src="images/menu-header__pic4.jpg" alt="" class="menu-header__pic">
+									</div>
+									<div class="menu-header__desc">
+										<div class="menu-header__title">Драгоценные металлы</div>
+										Скупка и продажа для юридических лиц
+									</div>
+									<a href="#" class="menu-header__forward"></a>
+								</div>
+								<!-- /.menu-header__header -->
+								<div class="menu-header__menu">
+									<a href="#" class="menu-header__link">Скупка металлов</a>
+									<a href="#" class="menu-header__link">Продажа</a>
+									<a href="#" class="menu-header__link">Документы</a>
+									<a href="#" class="menu-header__link">Правила приёма</a>
+									<a href="#" class="menu-header__link">Доставка и перевозка </a>
+									<a href="#" class="menu-header__link">Партнеры</a>
+								</div>
+								<!-- /.menu-header__menu -->
+
+							</div>
+							<!-- /.menu-header__field -->
+
+						</div>
+					</div>
+				</div>
+				<!-- /.menu-header__section -->
+			</div>
+			<!-- /.menu-header -->
+
+		</div>
+		<!-- /.header__inner -->
+	</div>
+	<!-- /.header -->
+
+	<div class="header-bottom">
+		<div class="header-bottom__inner">
+			<div class="header-bottom__row">
+				<div class="header-bottom__col">
+
+					<nav class="menu-horiz menu-horiz_gold">
+						<ul class="menu-horiz__list">
+							<li class="menu-horiz__item active">
+								<a href="#" class="menu-horiz__link">Получить заём</a>
+							</li>
+							<li class="menu-horiz__item">
+								<a href="#" class="menu-horiz__link">Скупка золота</a>
+							</li>
+							<li class="menu-horiz__item menu-horiz__item_brilliants-mobile">
+								<a href="#" class="menu-horiz__link">Бриллианты</a>
+							</li>
+						</ul>
+						<!-- /.menu-horiz__list -->
+					</nav>
+					<!-- /.menu-horiz -->
+
+				</div>
+				<div class="header-bottom__col">
+
+					<nav class="menu-horiz menu-horiz_gold">
+						<ul class="menu-horiz__list">
+							<li class="menu-horiz__item menu-horiz__item_brilliants">
+								<a href="#" class="menu-horiz__link">Бриллианты</a>
+							</li>
+							<li class="menu-horiz__item menu-horiz__item_franchise">
+								<a href="#" class="menu-horiz__link">Франшиза</a>
+							</li>
+							<li class="menu-horiz__item menu-horiz__item_right">
+								<a href="#" class="menu-horiz__link">Отзывы</a>
+							</li>
+						</ul>
+						<!-- /.menu-horiz__list -->
+					</nav>
+					<!-- /.menu-horiz -->
+
+					<!--					</div> -->
+				</div>
+				<!-- /.header-bottom__row -->
+			</div>
+		</div>
+	</div>
+	<!-- /.header-bottom -->
+
+	<div class="middle">
+		<div class="middle__container">
+
+			<div class="content">
+
+				<!--start get-->
+				<div class="get">
+					<div class="container">
+						<div class="get__percentage">0,05% в день / 1,5% в месяц</div>
+						<div class="get__title">Получить <span class="get__title-price">16900 руб.</span> за <span
+							class="get__title-small">73 руб.</span> в день
+						</div>
+						<div class="get__top">
+							<div class="get__slider" id="js-get__slider" data-value="0" data-min="0" data-max="10000" data-division="75" data-point="1000" data-beforedivisionstep="1" data-afterdivisionstep="1" data-beforeoutsideclickstep="1" data-afteroutsideclickstep="1"></div>
+							<input type="hidden" id="js-slider__input" value="">
+						</div>
+					</div>
+					<div class="get__bottom">
+						<div class="container">
+							<form class="get__form">
+								<div class="get__form-block">
+									<input type="text" class="get__field form-inputs" placeholder="Имя">
+									<input type="tel" class="get__phone form-inputs" placeholder="Телефон">
+									<input type="email" class="get__field  get__field_email form-inputs"
+										   placeholder="Email">
+									<div class="get__select">
+										<div class="combox">
+											<div class="combox__section">
+												<div class="combox__title js-combox__title">Аэропорт</div>
+												<ul class="combox__list">
+													<li class="combox__item active">
+														<label class="combox__label">
+															<input type="radio" name="r" class="combox__radio"
+																   data-default="true" checked="">
+															<span class="combox__text">Аэропорт</span>
+														</label>
+													</li>
+													<li class="combox__item">
+														<label class="combox__label">
+															<input type="radio" name="r" class="combox__radio">
+															<span class="combox__text">Выхино</span>
+														</label>
+													</li>
+													<li class="combox__item">
+														<label class="combox__label">
+															<input type="radio" name="r" class="combox__radio">
+															<span class="combox__text">900 проба</span>
+														</label>
+													</li>
+													<li class="combox__item">
+														<label class="combox__label">
+															<input type="radio" name="r" class="combox__radio">
+															<span class="combox__text">900 проба</span>
+														</label>
+													</li>
+													<li class="combox__item">
+														<label class="combox__label">
+															<input type="radio" name="r" class="combox__radio">
+															<span class="combox__text">900 проба</span>
+														</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- /.combox -->
+									</div>
+								</div>
+								<div class="get__links">
+									<a class="get__conditions" href="#">Условия заёма</a>
+									<a href="#" class="get__reviews">Отзывы</a>
+								</div>
+								<button type="submit" class="form-submit get__submit">Отправить заявку</button>
+								<div class="get__admire">Нажимая на кнопку «Отправить заявку», я даю
+									<a href="#">согласие на обработку персональных данных</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!--end get-->
+
+				<!--start breadcrumbs-->
+				<div class="breadcrumbs">
+					<div class="container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="#">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">Ломбард «Аэропорт»</li>
+						</ul>
+					</div>
+				</div>
+				<!--end breadcrumbs-->
+				<div class="page-title">Золото под залог</div>
+				<div class="container">
+					Золото под залог – быстрый и безопасный способ получить наличные. <br>
+					«Первый ювелирный ломбард» выдает займы крупных денежных сумм частным лицам под залог ювелирных
+					изделий
+					<br>
+					из драгоценных металлов. <br>
+					«Первый ювелирный ломбард» более 6 лет успешно функционирует на столичном рынке ювелирных <br>
+					изделий и драгоценных металлов. <br>
+					«Первый ювелирный ломбард» принимает золото в залог на самых выгодных условиях для столичного
+					региона.
+					<br>
+					Мы предлагаем своим клиентам и покупателям самые выгодные цены на ювелирные изделия из благородных
+					металлов
+					<br>
+					как в случае покупки, так и в случае продажи или заключения залоговых сделок. <br>
+					«Первый ювелирный ломбард» сотрудничает с крупнейшими отечественными производителями ювелирных
+					изделий.
+					<br>
+					Мы дорожим доверием каждого клиента и заинтересованы в долгосрочном сотрудничестве. <br>
+					Перед тем, как взять изделие в залог, мы проводим бесплатную и качественную оценку золота для того,
+					чтобы вы могли
+					<br>
+					извлечь из сделки максимальную выгоду. <br>
+					Сдать под залог ювелирные украшения из золота вы сможете в любом из отделений «Первого ювелирного
+					ломбарда».
+				</div>
+
+				<!-- /.content -->
+
+			</div>
+		</div>
+		<!-- /.middle__container -->
+	</div>
+	<!-- /.middle -->
+
+</div>
+<!-- /.wrapper -->
+<script src="js/modernizr-custom.js"></script><!--поддержка webp-->
+</body>
+</html>

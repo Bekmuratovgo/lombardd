@@ -1,0 +1,17 @@
+.top-banner {margin-bottom:30px;}
+.block-state {margin-top:45px;}
+.block-state .tb-loyality {width:100%; border-collapse:collapse;}
+.block-state .tb-loyality td {border:1px solid #ccc; padding:5px 10px;}
+.block-state .tb-loyality .bonus-add td:nth-child(1n+2) {background-color:#c4e1b5;}
+.block-state .tb-loyality .bonus-use td:nth-child(1n+1) {background-color:#f7cba8;}
+.block-state .bonus-desc {width:100%; border-collapse:collapse; margin-top:15px; font-size:12px; line-height:16px;}
+.block-state .bonus-desc td {border:1px solid #ccc; padding:5px 10px;}
+.block-state .bonus-desc td:first-child {width:40px; text-align:center;}
+.block-state .bonus-desc tfoot td {border:0; text-align:left !important;}
+.block-state .cell-color1 {background-color:#c4e1b5;}
+.block-state .cell-color2 {background-color:#f7cba8;}
+.block-state .cell-color3 {background-color:#b3c5eb !important;}
+
+@media only screen and (max-width:768px){
+	.block-state .tb-block {overflow-x:scroll;}
+}

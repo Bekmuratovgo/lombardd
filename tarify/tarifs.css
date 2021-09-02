@@ -1,0 +1,47 @@
+.tarifs-wrap {}
+.tarifs-wrap .tarifs-list {float:left;}
+.tarifs-wrap .tarifs-list .tarif-item {float:left; width:100%; border:1px solid #ccc; margin-bottom:45px;}
+.tarifs-wrap .tarifs-list .tarif-item .img {float:left; width:50%; position:relative;}
+.tarifs-wrap .tarifs-list .tarif-item .img img {width:100%;}
+.tarifs-wrap .tarifs-list .tarif-item .img.action {margin-top:0;}
+.tarifs-wrap .tarifs-list .tarif-item .img.action:before {content:''; width:140px; height:140px; position:absolute; top:-12px; left:-12px; background:url('img/icon-action.png') no-repeat 0 0;}
+.tarifs-wrap .tarifs-list .tarif-item .info {float:left; width:50%; padding:30px; position:relative;}
+.tarifs-wrap .tarifs-list .tarif-item .info:before {content:''; width:28px; height:70px; /*height:87px;*/ position:absolute; top:0; left:30px; background:url('img/icon-flag.png') no-repeat 0 100%;}
+.tarifs-wrap .tarifs-list .tarif-item .info .caption {font-size:28px; line-height:36px; font-weight:600; margin:10px 0 0 55px;}
+.tarifs-wrap .tarifs-list .tarif-item .info .desc {margin-top:20px;}
+.tarifs-wrap .tarifs-list .tarif-item .info .desc ul {list-style:none; padding:0; margin:0;}
+.tarifs-wrap .tarifs-list .tarif-item .info .desc ul li {padding-left:25px; position:relative; line-height:20px; margin-bottom:10px;}
+.tarifs-wrap .tarifs-list .tarif-item .info .desc ul li:before {content:''; width:20px; height:19px; position:absolute; top:0; left:0; background:url('img/icon-mark.png') no-repeat 0 0;}
+.tarifs-wrap .tarifs-list .tarif-item .right {float:right;}
+
+.tarifs-summ {width:100%; margin:30px 0 65px 0;}
+.tarifs-summ .caption {margin-bottom:24px; color:#0d0d0d; font-size:41px; font-weight:700; line-height:52px; text-align: center;}
+.tarifs-summ table {width:100%;}
+.tarifs-summ table th {padding:10px 15px; text-align:center; color:#707070;}
+.tarifs-summ table td {padding:25px 15px; border:1px solid #ccc; text-align:center;}
+.tarifs-summ table th:first-child,
+.tarifs-summ table td:first-child {padding-left:0; border:0; text-align:left;}
+.tarifs-summ table td:nth-child(1) {width:32%; font-size:18px; font-weight:700;}
+.tarifs-summ table td:nth-child(2) {width:17%; font-size:18px; font-weight:700;}
+.tarifs-summ table td:nth-child(3) {width:17%; font-size:28px; font-weight:700;}
+.tarifs-summ table td:nth-child(4) {width:17%; font-size:28px; font-weight:700;}
+.tarifs-summ table td:nth-child(5) {width:17%; font-size:28px; font-weight:700;}
+.tarifs-summ table td:nth-child(6) {width:17%; font-size:28px; font-weight:700;}
+.tarifs-summ table td:nth-child(7) {width:17%; font-size:28px; font-weight:700;}
+.tarifs-summ table .small {display:inline-block; font-size:14px; font-weight:400; line-height:18px; margin-top:10px;}
+
+@media only screen and (max-width:768px){
+	.tarifs-wrap .tarifs-list {float:none;}
+	.tarifs-wrap .tarifs-list .tarif-item {float:none; margin-bottom:25px;}
+	.tarifs-wrap .tarifs-list .tarif-item .img {float:none; width:100%;}
+	.tarifs-wrap .tarifs-list .tarif-item .info {float:none; width:100%;}
+	
+	.tarifs-summ table th {padding:10px 5px;}
+	.tarifs-summ table td {padding:10px 5px;}
+	.tarifs-summ table td:nth-child(1) {font-size:14px;}
+	.tarifs-summ table td:nth-child(2) {font-size:14px;}
+	.tarifs-summ table td:nth-child(3) {font-size:20px;}
+	.tarifs-summ table td:nth-child(4) {font-size:20px;}
+	.tarifs-summ table td:nth-child(5) {font-size:20px;}
+	.tarifs-summ table .small {font-size:12px; line-height:16px;}
+}

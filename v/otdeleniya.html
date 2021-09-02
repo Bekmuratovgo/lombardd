@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+
+	<title>Example</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/taiLib.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+
+	<script src="js/lazysizes.min.js" type="text/javascript" async></script>
+
+</head>
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+
+		<div class="header">
+			<div class="header__inner">
+
+				<div class="header-phone header-phone_inner">
+					<div class="header-phone__text">Контакты</div>
+					<a href="tel:+79867584346" class="header-phone__tel">+7 (986) 758-43-46</a>
+				</div>
+				<!-- /.header-phone -->
+
+				<div class="header-consult">
+					Консультация онлайн
+					<a href="ajax/callback.html" data-ajax class="header-consult__link"></a>
+				</div>
+				<!-- /.header-consult -->
+
+				<div class="logo logo_inner">
+					<a href="#" class="logo__link">
+						<img src="data:image/png;base64,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" alt="" class="logo__pic">
+						<span class="logo__text">Первый Ювелирный</span>
+						<span class="logo__info">Интернет-магазин</span>
+					</a>
+				</div>
+				<!-- /.logo -->
+
+				<div class="header-address header-address_inner">
+					14 филиалов <span>в Москве</span>
+					<a href="#" class="header-address__link"></a>
+				</div>
+				<!-- /.header-address -->
+
+				<div class="header-auth">
+					Кабинет
+					<a href="ajax/auth.html" data-ajax class="header-auth__link"></a>
+				</div>
+				<!-- /.header-auth -->
+
+				<div class="menu-header menu-header_inner">
+					<div class="menu-header__burger" id="js-menu-header__burger">
+						<span><i></i></span>
+					</div>
+					<!-- /.menu-header__burger -->
+					<div class="menu-header__overlay" id="js-menu-header__overlay"></div>
+					<div class="menu-header__section" id="js-menu-header__section">
+						<div class="menu-header__slide">
+							<div class="menu-header__scroll">
+
+								<div class="menu-header__field">
+
+									<div class="menu-header__header">
+										<div class="menu-header__photo">
+											<img src="images/menu-header__pic1.jpg" alt="" class="menu-header__pic">
+										</div>
+										<div class="menu-header__desc">
+											<div class="menu-header__title">Главная страница</div>
+											Все сервисы Первого Ювелирного
+										</div>
+										<a href="#" class="menu-header__forward"></a>
+									</div>
+									<!-- /.menu-header__header -->
+									<div class="menu-header__menu">
+										<a href="#" class="menu-header__link">Филиалы</a>
+										<a href="#" class="menu-header__link active">Контакты</a>
+										<a href="#" class="menu-header__link">Кабинет</a>
+									</div>
+									<!-- /.menu-header__menu -->
+
+								</div>
+								<!-- /.menu-header__field -->
+
+								<div class="menu-header__field">
+
+									<div class="menu-header__header">
+										<div class="menu-header__photo">
+											<img src="images/menu-header__pic2.jpg" alt="" class="menu-header__pic">
+										</div>
+										<div class="menu-header__desc">
+											<div class="menu-header__title">Магазин ювелирных изделий</div>
+											Скидки до 50% при покупке онлайн
+										</div>
+										<a href="#" class="menu-header__forward"></a>
+									</div>
+									<!-- /.menu-header__header -->
+									<div class="menu-header__menu">
+										<a href="#" class="menu-header__link">Каталог товаров</a>
+										<a href="#" class="menu-header__link">Акции</a>
+										<a href="#" class="menu-header__link">Франшиза</a>
+										<a href="#" class="menu-header__link">Новости</a>
+									</div>
+									<!-- /.menu-header__menu -->
+									<div class="menu-header__basket">
+										<a href="#" class="menu-header__forward">У вас 6 товаров в корзине</a>
+									</div>
+									<!-- /.menu-header__basket -->
+
+								</div>
+								<!-- /.menu-header__field -->
+
+								<div class="menu-header__field gold">
+
+									<div class="menu-header__header">
+										<div class="menu-header__photo">
+											<img src="images/menu-header__pic3.jpg" alt="" class="menu-header__pic">
+										</div>
+										<div class="menu-header__desc">
+											<div class="menu-header__title">Ломбард</div>
+											Займы, любое движимое имущество
+										</div>
+										<a href="#" class="menu-header__forward"></a>
+									</div>
+									<!-- /.menu-header__header -->
+									<div class="menu-header__menu">
+										<a href="#" class="menu-header__link">Займ</a>
+										<a href="#" class="menu-header__link">Ювелирный калькулятор</a>
+										<a href="#" class="menu-header__link">Авто</a>
+										<a href="#" class="menu-header__link">VIP</a>
+										<a href="#" class="menu-header__link">Техника</a>
+										<a href="#" class="menu-header__link">Франшиза</a>
+									</div>
+									<!-- /.menu-header__menu -->
+
+								</div>
+								<!-- /.menu-header__field -->
+
+								<div class="menu-header__field gold">
+
+									<div class="menu-header__header">
+										<div class="menu-header__photo">
+											<img src="images/menu-header__pic4.jpg" alt="" class="menu-header__pic">
+										</div>
+										<div class="menu-header__desc">
+											<div class="menu-header__title">Драгоценные металлы</div>
+											Скупка и продажа для юридических лиц
+										</div>
+										<a href="#" class="menu-header__forward"></a>
+									</div>
+									<!-- /.menu-header__header -->
+									<div class="menu-header__menu">
+										<a href="#" class="menu-header__link">Скупка металлов</a>
+										<a href="#" class="menu-header__link">Продажа</a>
+										<a href="#" class="menu-header__link">Документы</a>
+										<a href="#" class="menu-header__link">Правила приёма</a>
+										<a href="#" class="menu-header__link">Доставка и перевозка </a>
+										<a href="#" class="menu-header__link">Партнеры</a>
+									</div>
+									<!-- /.menu-header__menu -->
+
+								</div>
+								<!-- /.menu-header__field -->
+
+							</div>
+						</div>
+					</div>
+					<!-- /.menu-header__section -->
+				</div>
+				<!-- /.menu-header -->
+
+			</div>
+			<!-- /.header__inner -->
+		</div>
+		<!-- /.header -->
+
+		<div class="header-bottom">
+			<div class="header-bottom__inner">
+
+				<nav class="menu-horiz">
+					<ul class="menu-horiz__list">
+						<li class="menu-horiz__item menu-horiz__item_sub">
+							<a href="#" class="menu-horiz__link" id="js-menu-horiz__link">Все категории</a>
+
+							<div class="menu-horiz-sub">
+								<div class="menu-horiz-sub__inner">
+									<div class="menu-horiz-sub__close" id="js-menu-horiz-sub__close">
+										<i class="fa fa-times-circle-o" aria-hidden="true"></i>
+									</div>
+									<div class="menu-horiz-sub__section">
+										<div class="menu-horiz-sub__row">
+											<div class="menu-horiz-sub__col">
+												<div class="menu-horiz-sub__title">Тип украшения</div>
+												<ul class="menu-horiz-sub__list menu-horiz-sub__list_two">
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Кольца&nbsp;<span>3708</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Столовое серебро&nbsp;<span>64</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Серьги&nbsp;<span>1392</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Колье&nbsp;<span>32</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Цепи&nbsp;<span>532</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Футляры&nbsp;<span>23</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Подвески&nbsp;<span>483</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Часы&nbsp;<span>19</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Кресты&nbsp;<span>182</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Печатки&nbsp;<span>18</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Браслеты&nbsp;<span>118</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Средства для очистки&nbsp;<span>12</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Кулоны&nbsp;<span>101</span></a>
+													</li>
+												</ul>
+											</div>
+											<div class="menu-horiz-sub__col">
+												<div class="menu-horiz-sub__title">Металл</div>
+												<ul class="menu-horiz-sub__list menu-horiz-sub__list_one">
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Золото&nbsp;<span>5899</span></a>
+													</li>
+													<li class="menu-horiz-sub__item active">
+														<a href="#" class="menu-horiz-sub__link">Серебро&nbsp;<span>713</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Платина&nbsp;<span>9</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Сталь&nbsp;<span>483</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Сокол&nbsp;<span>182</span></a>
+													</li>
+												</ul>
+											</div>
+											<div class="menu-horiz-sub__col">
+												<div class="menu-horiz-sub__title">Вставка</div>
+												<ul class="menu-horiz-sub__list">
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Svarovski&nbsp;<span>29</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Бриллиант&nbsp;<span>2651</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Керамика&nbsp;<span>12</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Перламутр&nbsp;<span>2</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Агат&nbsp;<span>2</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Гранат&nbsp;<span>42</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Коралл&nbsp;<span>10</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Рубин&nbsp;<span>41</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Аквамарин&nbsp;<span>2</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Жадеит&nbsp;<span>1</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Корунд&nbsp;<span>15</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Сапфир&nbsp;<span>156</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Александрит&nbsp;<span>1</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Жемчуг&nbsp;<span>115</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Наноситал кахолонг&nbsp;<span>11</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Стекло&nbsp;<span>8</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Аметист&nbsp;<span>76</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Изумруд&nbsp;<span>98</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Оникс&nbsp;<span>10</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Топаз&nbsp;<span>270</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Без вставки&nbsp;<span>1090</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Карбон&nbsp;<span>2</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Опал&nbsp;<span>3</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Фианит&nbsp;<span>2544</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Бирюза&nbsp;<span>8</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Кварц&nbsp;<span>34</span></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="menu-horiz-sub__line"></div>
+
+										<!-- /.menu-horiz-sub__row -->
+										<div class="menu-horiz-sub__row menu-horiz-sub__row_footer">
+											<div class="menu-horiz-sub__col">
+												<div class="menu-horiz-sub__title">Отделение</div>
+												<ul class="menu-horiz-sub__list">
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Алексеевское&nbsp;<span>3708</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Аэропорт&nbsp;<span>532</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Алтуфьево&nbsp;<span>1392</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Кресты&nbsp;<span>182</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Подвески&nbsp;<span>83</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Кулоны&nbsp;<span>101</span></a>
+													</li>
+													<li class="menu-horiz-sub__item">
+														<a href="#" class="menu-horiz-sub__link">Браслеты&nbsp;<span>118</span></a>
+													</li>
+												</ul>
+											</div>
+											<div class="menu-horiz-sub__col">
+
+												<div class="menu-product">
+													<div class="menu-product__photo">
+														<img src="images/menu-product__pic.jpg" alt="" class="menu-product__pic">
+													</div>
+													<div class="menu-product__desc">
+														<div class="menu-product__sale">Скидка 30%</div>
+														<div class="menu-product__text">Кольцо из золота c бриллиантом</div>
+														<div class="menu-product__price">
+															<div class="menu-product__price-new">16 992 руб.</div>
+															<div class="menu-product__price-old">14 336 руб.</div>
+														</div>
+													</div>
+													<a href="#" class="menu-product__link"></a>
+												</div>
+												<!-- /.menu-product -->
+
+											</div>
+										</div>
+										<!-- /.menu-horiz-sub__row -->
+									</div>
+								</div>
+								<!-- /.menu-horiz-sub__inner -->
+							</div>
+							<!-- /.menu-horiz-sub -->
+						</li>
+<!-- 						<li class="menu-horiz__item">
+							<a href="#" class="menu-horiz__link">Акции</a>
+						</li> -->
+						<li class="menu-horiz__item">
+							<a href="#" class="menu-horiz__link">Франшиза</a>
+						</li>
+					</ul>
+					<!-- /.menu-horiz__list -->
+				</nav>
+				<!-- /.menu-horiz -->
+
+				<div class="basket-small active">
+					7
+					<a href="ajax/basket.html" data-ajax2 class="basket-small__link"></a>
+				</div>
+				<!-- /.basket-small -->
+
+				<!-- <div class="favourite-small active">
+					3
+					<a href="#" class="favourite-small__link"></a>
+				</div>
+				/.favourite-small -->
+
+				<div class="header-search" id="js-header-search">
+					<form action="#" class="header-search__form">
+						<input type="submit" value="" class="header-search__submit">
+						<input type="text" class="header-search__input" placeholder="Что ищете?">
+					</form>
+					<!-- /.header-search__form -->
+				</div>
+				<!-- /.header-search -->
+
+			</div>
+		</div>
+		<!-- /.header-bottom -->
+
+		<div class="middle">
+			<div class="middle__container">
+
+				<div class="content">
+
+					<!-- WORKAREA -->
+					<div class="page-title">Отделения «Первого Ювелирного»</div>
+
+					<div class="contact">
+						<div class="contact__header">
+							<div class="contact__col">
+
+								<div class="contact__menu">
+									<a href="#js-tabs-1" class="contact__link js-contact__link active">Отделения на карте</a>
+									<a href="#js-tabs-2" class="contact__link js-contact__link">На схеме метро</a>
+								</div>
+								<!-- /.contact__menu -->
+
+							</div>
+							<div class="contact__col" id="js-contact__col">
+								<div class="contact__popup">
+									<div class="contact-address">
+										<div class="contact-address__col">
+											<div class="contact-address__metro">
+												<div class="contact-address__select" id="js-contact-address__select">
+													<span class="contact-address__button">Белорусская</span>
+													<div class="contact-address__text contact-address__text_color">
+														C 9:00 до 21:00, без выходных
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="contact-address__col" id="js-contact-address__col_input">
+											<div class="contact-address__text">
+												Ломбард: <a href="tel:+79689170983">+7 (968) 917-09-83</a>
+											</div>
+											<div class="contact-address__text">
+												Улица Профсоюзная, 2/22
+											</div>
+											<div class="contact-address__link">
+												<a href="#">Страница отделения</a>
+											</div>
+										</div>
+									</div>
+									<!-- /.contact-address -->
+
+									<div class="contact-metro">
+										<div class="contact-metro__row">
+											<div class="contact-metro__col">
+												<div class="contact-metro__field">
+													<a href="#" data-coords="55.687761,37.573447" class="contact-metro__link js-contact-metro__link" data-metro="<span class='contact-address__button'>Академическая</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 21:00, без выходных</div>" data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79689170983'>+7 (968) 917-09-83</a></div><div class='contact-address__text'>Улица Профсоюзная, 2/22</div><div class='contact-address__link'><a href='#'>Страница отделения</a></div>">Академическая</a>
+												</div>
+												<div class="contact-metro__field">
+													<a href="#" data-coords="55.807800,37.638737" class="contact-metro__link js-contact-metro__link" data-metro="<span class='contact-address__button'>Алексеевская</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 21:00, без выходных</div>" data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79689170983'>+7 (968) 917-09-83</a></div><div class='contact-address__text'>Улица Профсоюзная, 2/22</div><div class='contact-address__link'><a href='#'>Страница отделения</a></div>">Алексеевская</a>
+												</div>
+												<div class="contact-metro__field">
+													<a href="#" data-coords="55.898376,37.587344" class="contact-metro__link js-contact-metro__link" data-metro="<span class='contact-address__button'>Алтуфьево</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 21:00, без выходных</div>" data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79689170983'>+7 (968) 917-09-83</a></div><div class='contact-address__text'>Улица Профсоюзная, 2/22</div><div class='contact-address__link'><a href='#'>Страница отделения</a></div>">Алтуфьево</a>
+												</div>
+												<div class="contact-metro__field">
+													<a href="#" data-coords="55.800261,37.532870" class="contact-metro__link js-contact-metro__link" data-metro="<span class='contact-address__button'>Аэропорт</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 21:00, без выходных</div>" data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79689170983'>+7 (968) 917-09-83</a></div><div class='contact-address__text'>Улица Профсоюзная, 2/22</div><div class='contact-address__link'><a href='#'>Страница отделения</a></div>">Аэропорт</a>
+												</div>
+												<div class="contact-metro__field">
+													<a href="#" data-coords="55.777439,37.582107" class="contact-metro__link js-contact-metro__link active" data-metro="<span class='contact-address__button'>Белорусская</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 21:00, без выходных</div>" data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79689170983'>+7 (968) 917-09-83</a></div><div class='contact-address__text'>Улица Профсоюзная, 2/22</div><div class='contact-address__link'><a href='#'>Страница отделения</a></div>">Белорусская</a>
+												</div>
+												<div class="contact-metro__field">
+													<a href="#" data-coords="55.642357,37.526115" class="contact-metro__link js-contact-metro__link" data-metro="<span class='contact-address__button'>Беляево</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 21:00, без выходных</div>" data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79689170983'>+7 (968) 917-09-83</a></div><div class='contact-address__text'>Улица Профсоюзная, 2/22</div><div class='contact-address__link'><a href='#'>Страница отделения</a></div>">Беляево</a>
+												</div>
+											</div>
+											<!-- /.contact-metro__col -->
+											<div class="contact-metro__col">
+												<div class="contact-metro__field">
+													<a href="#" data-coords="55.659404,37.750451" class="contact-metro__link js-contact-metro__link" data-metro="<span class='contact-address__button'>Братиславская</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 21:00, без выходных</div>" data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79689170983'>+7 (968) 917-09-83</a></div><div class='contact-address__text'>Улица Профсоюзная, 2/22</div><div class='contact-address__link'><a href='#'>Страница отделения</a></div>">Братиславская</a>
+												</div>
+												<div class="contact-metro__field">
+													<a href="#" data-coords="55.670077,37.554493" class="contact-metro__link js-contact-metro__link" data-metro="<span class='contact-address__button'>Новые черемушки</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 21:00, без выходных</div>" data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79689170983'>+7 (968) 917-09-83</a></div><div class='contact-address__text'>Улица Профсоюзная, 2/22</div><div class='contact-address__link'><a href='#'>Страница отделения</a></div>">Новые черемушки</a>
+												</div>
+												<div class="contact-metro__field">
+													<a href="#" data-coords="55.863207,37.604762" class="contact-metro__link js-contact-metro__link" data-metro="<span class='contact-address__button'>Отрадное</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 21:00, без выходных</div>" data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79689170983'>+7 (968) 917-09-83</a></div><div class='contact-address__text'>Улица Профсоюзная, 2/22</div><div class='contact-address__link'><a href='#'>Страница отделения</a></div>">Отрадное</a>
+												</div>
+												<div class="contact-metro__field">
+													<a href="#" data-coords="55.731658,37.664779" class="contact-metro__link js-contact-metro__link" data-metro="<span class='contact-address__button'>Пролетарская</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 21:00, без выходных</div>" data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79689170983'>+7 (968) 917-09-83</a></div><div class='contact-address__text'>Улица Профсоюзная, 2/22</div><div class='contact-address__link'><a href='#'>Страница отделения</a></div>">Пролетарская</a>
+												</div>
+												<div class="contact-metro__field">
+													<a href="#" data-coords="55.676910,37.505831" class="contact-metro__link js-contact-metro__link" data-metro="<span class='contact-address__button'>Проспект Вернадского</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 21:00, без выходных</div>" data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79689170983'>+7 (968) 917-09-83</a></div><div class='contact-address__text'>Улица Профсоюзная, 2/22</div><div class='contact-address__link'><a href='#'>Страница отделения</a></div>">Проспект Вернадского</a>
+												</div>
+												<div class="contact-metro__field">
+													<a href="#" data-coords="55.677930,37.562874" class="contact-metro__link js-contact-metro__link" data-metro="<span class='contact-address__button'>Профсоюзная</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 21:00, без выходных</div>" data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79689170983'>+7 (968) 917-09-83</a></div><div class='contact-address__text'>Улица Профсоюзная, 2/22</div><div class='contact-address__link'><a href='#'>Страница отделения</a></div>">Профсоюзная </a>
+												</div>
+											</div>
+											<!-- /.contact-metro__col -->
+										</div>
+										<!-- /.contact-metro__row -->
+									</div>
+									<!-- /.contact-metro -->
+								</div>
+							</div>
+						</div>
+						<!-- /.contact__header -->
+
+						<div class="tabs tabs_map">
+							<div class="tabs__inner js-tabs__inner" id="js-tabs-1">
+								<div class="contact__map" id="js-contact__map" data-center="55.751574,37.573856"></div>
+							</div>
+							<div class="tabs__inner js-tabs__inner" id="js-tabs-2">
+								<div class="contact__metro">
+									<img src="images/metro_map.gif" alt="">
+								</div>
+							</div>
+						</div>
+						<!-- /.tabs  -->
+
+						<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+						<script type="text/javascript" src="js/maps.js"></script>
+
+						<div class="contact__footer">
+							<div class="contact__row">
+								<div class="contact__cell">
+
+									<div class="contact__title">Наши реквизиты</div>
+									<div class="contact__text">
+										<strong>ООО «Первый ювелирный ломбард»</strong><br>
+										ОГРН 1147746123436     ИНН 7703805756
+									</div>
+									<div class="contact__text contact__text_indent">
+										Номер свидетельства о постановке<br>
+										на специальный учет: 0160025346
+									</div>
+									<div class="contact__text">
+										<strong>ООО «Первый ювелирный ломбард»</strong><br>
+										ОГРН 1147746123436     ИНН 7703805756
+									</div>
+
+								</div>
+								<div class="contact__cell">
+
+									<div class="contact__title">Наш офис</div>
+									<div class="contact__text">
+										<a href="tel:+79867584346">+7 (986) 758-43-46</a><br>
+										Москва, Пресненский вал, д.27, стр.15
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.contact -->
+
+					<!-- END WORKAREA -->
+
+				</div>
+				<!-- /.content -->
+
+			</div>
+			<!-- /.middle__container -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+
+</body>
+</html>

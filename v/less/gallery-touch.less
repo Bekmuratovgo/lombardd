@@ -1,0 +1,159 @@
+.gallery-touch {
+	.user-select(none);
+	position: relative;
+	box-sizing: border-box;
+
+	&__inner {
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	&__list {
+		box-sizing: border-box;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		transform: translate3d(0, 0, 0);
+		transition: transform .3s;
+	}
+
+	&.move &__list {
+		// pointer-events: none;
+		transition: none;
+	}
+
+	&__item {
+		box-sizing: border-box;
+		margin: 0;
+		min-width: 50%;
+		width: 50%;
+		max-width: 50%;
+
+		.xs({
+			min-width: 100%;
+			width: 100%;
+			max-width: 100%;
+		});
+	}
+
+	&__arrow {
+		box-sizing: border-box;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 500ms;
+
+		&.active {
+			pointer-events: auto;
+			opacity: 1;
+		}
+	}
+
+	&__prev,
+	&__next {
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;
+		width: 100px;
+		height: 100%;
+		cursor: pointer;
+
+		.xs({
+			width: 40px;
+		});
+
+		span {
+			width: 18px;
+			height: 22px;
+			border-top: 11px solid transparent;
+			border-bottom: 11px solid transparent;
+			box-sizing: border-box;
+			position: absolute;
+			top: 50%;
+			margin-top: -11px;
+			opacity: .5;
+			.transition(opacity 300ms);
+		}
+
+		&:hover span {
+			opacity: 1;
+		}
+	}
+
+	&__prev {
+		left: -50px;
+
+		span {
+			left: 10px;
+			border-right: 11px solid #dddddd;
+		}
+
+		.xs({
+			left: -20px;
+		});
+	}
+
+	&__next {
+		right: -50px;
+
+		span {
+			right: 10px;
+			border-left: 11px solid #dddddd;
+		}
+
+		.xs({
+			right: -20px;
+		});
+	}
+
+	&__nav {
+		box-sizing: border-box;
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 5px;
+		text-align: center;
+		pointer-events: none;
+		transition: opacity 500ms;
+
+		&.active {
+			pointer-events: auto;
+			opacity: 1;
+		}
+	}
+
+	&__thumb {
+		box-sizing: border-box;
+		width: 30px;
+		height: 30px;
+		padding: 10px;
+		display: inline-block;
+		cursor: pointer;
+
+		&:after {
+			box-sizing: border-box;
+			height: 100%;
+			width: 100%;
+			background: #fff;
+			content: '';
+			display: block;
+			border-radius: 50%;
+			transition: background 500ms;
+		}
+
+		&.active,
+		&:hover {
+
+			&:after {
+				background: #c70;
+			}
+		}
+	}
+
+	&.move &__arrow,
+	&.move &__nav {
+		pointer-events: none !important;
+	}
+}

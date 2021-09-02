@@ -1,0 +1,5 @@
+ <?
+$sSectionName = "Honor";
+$arDirProperties = array(
+);
+?>

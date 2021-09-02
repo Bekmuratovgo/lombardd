@@ -1,0 +1,65 @@
+id;parent_id;title;title_plural;uri;nomenclature;desc;img;type;menu_top;active;order
+1;61;Блюдце;Блюдца;blyudce;;;;items;0;1;-65
+2;61;Бокал;Бокалы;bokal;;;;items;1;1;-64
+3;61;Браслет;Браслеты;braslet;Браслет;;category-bracer-3.png;items;1;1;-63
+4;61;Брелок;Брелоки;brelok;;;category-brelok-4.png;items;1;1;-62
+5;61;Брошь;Броши;brosh;;;category-gem-5.png;items;1;1;-61
+6;61;Булавка;Булавки;bulavka;;;;items;1;1;-60
+7;61;Ваза;Вазы;vaza;;;;items;1;1;-59
+8;61;Вилка;Вилки;fork;Вилка;;category-fork-8.png;items;0;1;-58
+9;61;Деталь изделия;Детали изделия;detali-izdeliya;;;;items;1;1;-57
+10;61;Жетон;Жетоны;zheton;;;;items;1;1;-55
+11;61;Зажим для галстука;Зажимы для галстука;zazhim-dlya-galstuka;;;;items;1;1;-54
+12;61;Зажим для денег;Зажимы для денег;zazhim-dlya-deneg;;;;items;1;1;-53
+13;61;Заколка для волос;Заколки для волос;zakolka-dlya-volos;;;;items;1;1;-52
+14;61;Запонки;Запонки;zaponki;;;;items;1;1;-51
+15;61;Значки;Значки;znachok;;;;items;1;1;-50
+16;61;Колье;Колье;kolye;;;category-kolee-16.png;items;1;1;-49
+17;61;Кольцо;Кольца;kolco;Кольцо;;category-ring-17.png;items;1;1;-69
+18;61;Конфетница;Конфетницы;konfetnica;;;category-bowl-18.png;items;0;1;-48
+19;61;Коронка;Коронки;koronki;;;;items;1;1;-47
+20;61;Кофейник;Кофейники;kofeinik;;;;items;1;1;-46
+21;61;Крест;Кресты;krest;Крест;;category-cross-21.png;items;1;1;-67
+22;61;Кружка;Кружки;kruzhka;;;;items;1;1;-45
+23;61;Кубок;Кубки;kubok;;;;items;1;1;-44
+24;61;Кувшин;Кувшины;kuvshin;;;;items;1;1;-43
+25;61;Кулон;Кулоны;kulon;Кулон;;category-podveska-25.png;items;1;1;-42
+26;61;Ложка;Ложки;spoon;Ложка, Ложка столовая, Ложка чайная;;category-spoon-26.png;items;0;1;-41
+27;61;Лопатка;Лопатки;lopatka;;;category-lopatka-27.png;items;0;1;-40
+28;61;Медальон;Медальоны;medalon;;;;items;1;1;-39
+29;61;Молочник;Молочники;molochnik;Молочник;;;items;1;1;-37
+30;61;Монета;Монеты;moneta;;;category-coin-30.png;items;0;1;-35
+31;61;Нож;Ножы;nozh;;;;items;1;1;-32
+32;61;Оклад;Оклады;oklad;;;;items;1;1;-31
+33;61;Печатка;Печатки;pechatka;;;category-ring-man-33.png;items;1;1;-29
+34;61;Пирсинг;Пирсинг;pirsing;;;;items;1;1;-27
+35;61;Подвеска;Подвески;podveska;Подвеска;;category-podveska-35.png;items;1;1;-25
+36;61;Поднос;Подносы;podnos;;;;items;1;1;-23
+37;61;Подстаканник;Подстаканники;podstakannik;;;;items;0;1;-21
+38;61;Половник;Половники;polovnik;;;;items;1;1;-20
+39;61;Портсигар;Портсигары;portsigar;;;;items;1;1;-38
+40;61;Пудреница;Пудреницы;pudrenica;;;;items;1;1;-36
+41;61;Рюмка;Рюмки;ryumka;Рюмка;;category-goblet-41.png;items;1;1;-34
+42;61;Салфетница;Салфетницы;salfetnica;;;;items;0;1;-33
+44;61;Серьги;Серьги;sergi;Серьги, Пусеты;;category-earring-44.png;items;1;1;-68
+45;61;Сито;Сито;sito;;;;items;1;1;-30
+46;61;Слиток;Слитки;slitok;;;;items;1;1;-28
+47;61;Солонка;Солонки;solonka;;;;items;1;1;-26
+48;61;Стакан;Стаканы;stakan;;;;items;1;1;-24
+49;61;Статуэтка;Статуэтки;statuetka;;;;items;1;1;-22
+50;61;Стопка;Стопки;stopka;;;category-goblet-50.png;items;0;1;-19
+51;61;Турка;Турки;turka;;;;items;1;1;-18
+52;61;Цепь;Цепи;cep;Цепь;;chain_default-52.png;items;1;1;-17
+53;61;Часы;Часы;watch;;;category-watch-53.png;items;1;1;-16
+54;61;Чашка;Чашки;chashka;;;;items;1;1;-15
+55;61;Щипцы для сахара;Щипцы для сахара;schipcy-dlya-saxara;;;;items;1;1;-14
+56;61;Столовое серебро;Столовое серебро;stolovoe-serebro;Поднос, Ложка столовая, Ваза, Конфетница, Стакан, Молочник, Ложка столовая, Ложка чайная;;;items;1;1;-66
+57;61;Футляр;Футляры;case;;;category-trunk-57.png;items;1;1;-13
+58;61;Средство для очистки;Средства для очистки;clear;;;category-clear-58.png;items;1;1;-12
+59;61;Листовка;Листовки;broshure;листовка;;;items;0;1;-11
+60;61;Золото аффинированное в гранулах;Золото аффинированное в гранулах;gold-granuli;;;;items;0;1;-10
+61;63;Ювелирные изделия;Ювелирные изделия;jewelery;;;;cat;0;1;-7
+62;0;Все товары;Все товары;all-goods;;;;cat;1;1;-9
+63;62;Подарки и цветы;Подарки и цветы;present-flowers;;;;cat;0;1;-8
+64;61;Ювелирные украшения;Ювелирные украшения;jewelry-finery;;;;cat;0;1;-6
+65;0;Сувенир;Сувениры;present;;;;items;0;1;-56

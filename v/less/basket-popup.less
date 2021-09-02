@@ -1,0 +1,263 @@
+.basket-popup {
+	width: 644px;
+	box-shadow: 0 5px 46px rgba(0, 0, 0, 0.18);
+	background-color: #ffffff;
+	padding: 40px 70px;
+	line-height: 1;
+	overflow: hidden;
+
+	.xs({
+		width: 300px;
+		padding: 30px 20px;
+	});
+
+	&__inner {
+	}
+
+	&__title {
+		color: #000000;
+		font-family: Arsenal;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 36.21px;
+		letter-spacing: 0.09px;
+		margin-bottom: 20px;
+
+		.xs({
+			font-size: 22px;
+			line-height: 25px;
+		});
+	}
+
+	&__slider {
+		margin: 0 -70px;
+		padding: 0 70px;
+		border-bottom: 1px solid #f1f1f1;
+		margin-bottom: 25px;
+
+		.xs({
+			margin: 0 -20px 15px;
+			padding: 0 20px;
+		});
+	}
+
+	&__total {
+		display: flex;
+		justify-content: flex-start;
+		align-items: baseline;
+		margin-bottom: 50px;
+
+		.xs({
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+		});
+	}
+
+	&__total-text {
+		color: #d5d5d5;
+		font-family: Arsenal;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 27.43px;
+		letter-spacing: 0.09px;
+		margin-right: 5px;
+	}
+
+	&__total-summ {
+		color: #ee0707;
+		font-family: Arsenal;
+		font-size: 29px;
+		font-weight: 700;
+		line-height: 34.72px;
+		margin-right: 35px;
+
+		.xs({
+			font-size: 25px;
+		});
+	}
+
+	&__total-smalltext {
+		color: #d5d5d5;
+		font-family: Arsenal;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 20.09px;
+		letter-spacing: 0.09px;
+		margin-right: 5px;
+	}
+
+	&__total-summold {
+		color: #292929;
+		font-family: Arsenal;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 23.73px;
+	}
+
+	&__form {
+	}
+
+	&__input {
+		width: 100%;
+		height: 46px;
+		border: 1px solid #b5b5b5;
+		background-color: #fff;
+		display: block;
+		margin-bottom: 17px;
+		padding: 0 29px;
+		color: rgb(0, 0, 0);
+		font-size: 14px;
+		font-weight: bold;
+
+		&::-webkit-input-placeholder {
+			font-weight: 400;
+		}
+
+		&:-moz-placeholder {
+			font-weight: 400;
+		}
+
+		&::-moz-placeholder {
+			font-weight: 400;
+		}
+
+		&::-ms-input-placeholder {
+			font-weight: 400;
+		}
+
+		&::placeholder {
+			font-weight: 400;
+		}
+
+		&:focus {
+			font-weight: 400;
+		}
+	}
+
+	&__row {
+		margin: 0 -3px;
+		.clearfix();
+	}
+
+	&__col {
+		float: left;
+		width: 50%;
+		padding: 0 3px;
+
+		.xs({
+			width: 100%;
+		});
+	}
+
+	&__info {
+		color: #000000;
+		font-family: Arsenal;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 22.71px;
+		font-weight: 700;
+		letter-spacing: 0.09px;
+		margin-bottom: 10px;
+		display: flex;
+		justify-content: space-between;
+
+		span {
+			color: #aeaeae;
+			font-family: "PT Sans";
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: -0.06px;
+		}
+
+		.xs({
+			flex-wrap: wrap;
+		});
+
+		.minWidth(992px, {
+			padding-top: 10px;
+		});
+	}
+
+	&__select {
+		width: 100%;
+		height: 46px;
+		border: 1px solid #b5b5b5;
+		display: block;
+		margin-bottom: 17px;
+		position: relative;
+
+		&:after {
+			pointer-events: none;
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			content: '';
+			position: absolute;
+			right: 10px;
+			margin: -8px 0 0;
+			top: 50%;
+			content: "\f107";
+			font-size: 18px;
+		}
+
+		select {
+			width: 100%;
+			height: 100%;
+			border: none;
+			appearance: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			padding-left: 30px;
+			padding-right: 30px;
+			font-size: 14px;
+			font-weight: 700;
+			color: rgb(51, 51, 51);
+		}
+	}
+
+	&__submit {
+		width: 100%;
+		height: 64px;
+		background-color: #ee0707;
+		background-image: linear-gradient(35deg, rgba(245, 233, 233, 0.12) 0%, rgba(23, 23, 23, 0.12) 100%);
+		margin: 17px auto;
+		color: #fffafa;
+		font-family: Arsenal;
+		font-size: 22px;
+		font-weight: 700;
+		border: none;
+		transition: background 300ms;
+
+		&:hover {
+			background-color: #ff1616;
+			background-image: -webkit-linear-gradient(left, rgba(197, 23, 0, 0.21) 0%, rgba(244, 5, 5, 0) 100%);
+			background-image: -o-linear-gradient(left, rgba(197, 23, 0, 0.21) 0%, rgba(244, 5, 5, 0) 100%);
+			background-image: linear-gradient(to right, rgba(197, 23, 0, 0.21) 0%, rgba(244, 5, 5, 0) 100%);
+		}
+
+		.xs({
+			margin-top: 5px;
+			margin-bottom: 10px;
+		});
+	}
+
+	&__footer {
+		padding-left: 20px;
+		color: #c0c0c0;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+
+		a {
+			text-decoration: none;
+			color: #848484;
+			border-bottom: 1px solid #e9e9e9;
+		}
+
+		.xs({
+			padding: 0;
+		});
+	}
+}

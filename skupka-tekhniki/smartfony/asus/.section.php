@@ -1,0 +1,5 @@
+ <?
+$sSectionName = "Asus";
+$arDirProperties = array(
+);
+?>

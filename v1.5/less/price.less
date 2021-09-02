@@ -1,0 +1,326 @@
+.price {
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 70px;
+
+	&__heading{
+		margin-bottom: 40px;
+		text-align: center;
+		color: #252525;
+		font-family: Arsenal;
+		font-size: 39px;
+		font-weight: 700;
+		line-height: 45px;
+	}
+
+	&__blocks {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__gold {
+		display: flex;
+		flex-grow: 2;
+		justify-content: center;
+		overflow: hidden;
+
+		.price__title {
+			font-size: 34px;
+			padding-left: 150px;
+			background-image: url(../images/gold-title.png);
+			background-position: left 0px;
+		}
+
+		.price__table {
+			width: 400px;
+			background-color: #f6f6f6;
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				display: block;
+				width: 1000%;
+				right: 100%;
+				top: 0;
+				height: 100%;
+				background-color: #f6f6f6;
+			}
+
+		}
+
+		.price__cell {
+			font-size: 18px;
+
+			&_strong {
+				font-size: 22px;
+				line-height: 27px;
+			}
+
+			&_accent {
+				padding-top: 10px;
+				padding-bottom: 15px;
+				border-bottom: 1px solid #ebebeb;
+			}
+
+			&_border {
+				position: relative;
+				&::before {
+					content: "";
+					position: absolute;
+					display: block;
+					width: 1000%;
+					right: 100%;
+					bottom: -1px;
+					height: 1px;
+					background-color: #ebebeb;
+					z-index: 2;
+				}
+			}
+		}
+
+	}
+
+	&__silver,
+	&__platinum {
+		flex-grow: 1;
+		display: flex;
+		justify-content: flex-start;
+
+		.price__cell:last-child{
+			text-align: right;
+		}
+	}
+
+	&__silver {
+		position: relative;
+		.price__title {
+			padding-top: 6px;
+			background-image: url(../images/silver-title.png);
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 1px;
+			height: 316px;
+			right: 20%;
+			top: 0;
+			background-color: #ebebeb;
+		}
+	}
+
+	&__platinum {
+
+		.price__title {
+			padding-top: 6px;
+			background-image: url(../images/platinum-title.png);
+		}
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		padding-left: 115px;
+		color: #282727;
+		font-family: Arsenal;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 45px;
+		background-repeat: no-repeat;
+		background-position: left 9px;
+	}
+
+	&__table {
+		width: 100%;
+	}
+
+	&__cell {
+		color: #282727;
+		font-family: Arsenal;
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 24px;
+		padding-top: 10px;
+		padding-bottom: 0px;
+
+		&_strong {
+			font-size: 18px;
+		}
+
+		&_accent {
+
+			color: #bf8803;
+		}
+
+		&_top {
+			padding-top: 20px;
+		}
+
+		&_bottom {
+			padding-bottom: 30px;
+		}
+	}
+
+	@media (max-width: 1100px) and (min-width: @screen-sm) {
+		margin-bottom: -90px;
+
+		&__heading{
+			font-size: 34px;
+		}
+
+		&__blocks {
+			flex-wrap: wrap;
+			justify-content: flex-end;
+		}
+
+		&__gold {
+			width: 60%;
+			flex-grow: inherit;
+
+			.price__title{
+				font-size: 30px;
+			}
+
+			.price__table {
+				overflow: hidden;
+
+				&:after {
+					display: none;
+				}
+
+				td:first-child {
+					padding-left: 40px;
+				}
+			}
+
+			.price__cell{
+				padding-bottom: 11px;
+				padding-top: 11px;
+
+				&_accent{
+					padding-top: 20px;
+					padding-bottom: 20px;
+				}
+			}
+
+		}
+
+		&__silver,
+		&__platinum {
+			width: 40%;
+			flex-grow: inherit;
+
+			.price__title{
+				margin-bottom: 0;
+			}
+			.price__cell{
+				padding-top: 7px;
+			}
+		}
+
+		&__silver {
+
+			&:after {
+				width: 244px;
+				height: 1px;
+				right: auto;
+				top: auto;
+				bottom: 165px;
+			}
+		}
+
+		&__platinum {
+			position: relative;
+			top: -145px;
+		}
+	}
+
+	@media (max-width: @screen-xs-max) {
+		margin-bottom: 40px;
+
+		&__heading{
+			font-size: 25px;
+			margin-bottom: 30px;
+		}
+
+		&__blocks {
+			flex-wrap: wrap;
+		}
+
+		&__table {
+			min-width: 280px;
+			max-width: 400px;
+		}
+
+		&__title {
+			text-align: center;
+		}
+
+		&__gold,
+		&__silver,
+		&__platinum {
+			width: 100%;
+			flex-grow: inherit;
+
+			.price__table {
+
+				td:first-child {
+					padding-left: 30px;
+				}
+			}
+		}
+
+		&__silver,
+		&__platinum {
+			display: flex;
+			justify-content: center;
+
+			.price__title {
+				position: relative;
+				background-position: 40px 9px;
+				padding-bottom: 7px;
+				margin-bottom: 5px;
+
+				&::after {
+					content: "";
+					position: absolute;
+					display: block;
+					width: 80%;
+					height: 1px;
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					background: #eee;
+				}
+			}
+		}
+
+		&__gold {
+			margin-bottom: 35px;
+
+			.price__title {
+				font-size: 30px;
+				background-position: 20px 0;
+			}
+
+			.price__table {
+				width: auto;
+				overflow: hidden;
+
+				&:after {
+					display: none;
+				}
+			}
+		}
+
+		&__silver {
+			margin-bottom: 35px;
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+}

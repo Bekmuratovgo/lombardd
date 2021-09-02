@@ -1,0 +1,87 @@
+.basket-address {
+	padding-top: 10px;
+	line-height: 1;
+
+	&__tel {
+		color: rgb(20, 20, 20);
+		font-family: Arsenal;
+		font-size: 20px;
+		font-weight: 700;
+		display: inline-block;
+		vertical-align: middle;
+		text-decoration: none;
+
+		.xs({
+			display: block;
+			margin-bottom: 10px;
+		});
+	}
+
+	&__sep {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 12px;
+		width: 3px;
+		height: 3px;
+		background: rgb(20, 20, 20);
+		border-radius: 50%;
+
+		&_last {
+			display: none;
+
+			.maxWidth(991px, {
+				display: inline-block;
+			});
+		}
+
+		.xs({
+			display: none;
+		});
+	}
+
+	&__block {
+		padding: 10px 0 15px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid rgb(241, 241, 241);
+
+		.maxWidth(991px, {
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+			border: none;
+			vertical-align: middle;
+		});
+	}
+
+	&__email {
+		color: rgb(28, 28, 28);
+		font-family: Arsenal;
+		font-size: 20px;
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	&__address {
+		color: rgb(0, 0, 0);
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+
+		.maxWidth(991px, {
+			border-top: 1px solid rgb(241, 241, 241);
+			padding: 18px 0 0;
+			margin-top: 18px;
+		});
+
+		.xs({
+			padding-top: 10px;
+		});
+	}
+
+	&__time {
+		color: rgb(0, 0, 0);
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+	}
+}

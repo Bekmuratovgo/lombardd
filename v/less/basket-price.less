@@ -1,0 +1,140 @@
+.basket-price {
+	line-height: 1;
+
+	.maxWidth(991px, {
+		margin-bottom: 35px;
+	});
+
+	.xs({
+		margin-bottom: 26px;
+	});
+
+	&__section {
+		padding: 25px 52px 35px;
+		background-color: rgb(243, 243, 243);
+		background-image: -webkit-linear-gradient(306deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 100%);
+		background-image: -o-linear-gradient(306deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 100%);
+		background-image: linear-gradient(36deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 100%);
+		margin-bottom: 13px;
+
+		.maxWidth(991px, {
+			margin-bottom: 8px;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-bottom: 15px;
+		});
+
+		.xs({
+			padding: 25px 20px;
+			margin: 0 -20px 6px;
+		});
+	}
+
+	&__field {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-bottom: 14px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&_bottom {
+			margin-bottom: 24px;
+		}
+
+		.maxWidth(991px, {
+
+			&_top {
+				width: 50%;
+
+				&:nth-child(2n - 1) {
+					padding-right: 20px;
+				}
+
+				&:nth-child(2n) {
+					padding-left: 20px;
+				}
+			}
+		});
+
+		.xs({
+			width: 100%;
+			padding: 0 !important;
+		});
+	}
+
+	&__term {
+		color: rgb(0, 0, 0);
+		font-family: Arsenal;
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 15px;
+	}
+
+	&__value {
+		font-family: Arsenal;
+		// font-size: 26px;
+		font-size: 21px;
+		font-weight: 700;
+		line-height: 26px;
+		color: #c48d16;
+	}
+
+	&__text {
+		color: rgb(30, 30, 30);
+		font-family: Arsenal;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 18px;
+	}
+
+	&__summ {
+		position: relative;
+
+		&_up {
+			color: rgb(31, 169, 54);
+
+			&:before {
+				content: '';
+				display: inline-block;
+				vertical-align: baseline;
+				position: relative;
+				top: -3px;
+				margin-right: 4px;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-bottom: 7px solid rgb(31, 169, 54);
+			}
+		}
+
+		&_down {
+			color: #d11313;
+
+			&:before {
+				content: '';
+				display: inline-block;
+				vertical-align: baseline;
+				position: relative;
+				top: -3px;
+				margin-right: 4px;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 7px solid #d11313;
+			}
+		}
+
+		.maxWidth(991px, {
+			margin-left: 15px;
+		});
+	}
+
+	&__alloy {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

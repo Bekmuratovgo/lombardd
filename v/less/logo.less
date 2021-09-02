@@ -1,0 +1,140 @@
+.logo {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 14px;
+	text-align: center;
+
+	.main__top & {
+		z-index: 1;
+	}
+
+	&_inner {
+		position: relative;
+		top: auto;
+		left: auto;
+	}
+
+	&__link {
+		display: inline-block;
+		text-decoration: none;
+	}
+
+	&__pic {
+		display: inline-block;
+		margin-bottom: 7px;
+	}
+
+	&_inner &__pic {
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		color: rgb(255, 255, 255);
+		font-family: Arsenal;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 28px;
+		display: block;
+
+		.logo_inner & {
+			color: rgb(0, 0, 0);
+			line-height: 31px;
+			font-size: 30px;
+		}
+	}
+
+	&__info {
+		color: rgb(0, 0, 0);
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 12px;
+		position: absolute;
+		padding: 0 12px;
+		background: #fff;
+		left: 50%;
+		bottom: -15px;
+		.transform(translate(-50%, 0));
+		display: none;
+
+		.logo_inner & {
+			display: block;
+
+			.minWidth(992px, {
+				font-size: 14px;
+				padding: 0 20px;
+			});
+
+			.xs({
+				bottom: -7px;
+			});
+
+		}
+
+		.gold & {
+			color: #c48d16;
+		}
+	}
+
+	.maxWidth(991px, {
+		top: 10px;
+
+		&_inner {
+			top: auto;
+		}
+
+		&__pic {
+			max-height: 42px;
+			margin-bottom: 8px;
+
+			.logo_inner & {
+				max-height: 57px;
+			}
+		}
+
+		&__text {
+			font-size: 16px;
+			line-height: 19px;
+
+			.logo_inner & {
+				font-size: 22px;
+				line-height: 23px;
+			}
+		}
+
+	});
+
+	.xs({
+		top: 12px;
+
+		.main__top & {
+			position: fixed;
+			z-index: 10;
+		}
+
+		&_inner {
+			top: auto;
+		}
+
+		&__pic {
+			height: 46px;
+			max-height: 46px;
+
+			.logo_inner & {
+				height: 47px;
+				max-height: 47px;
+			}
+		}
+
+		&__text {
+			display: none;
+		}
+
+	});
+}
+
+//     <div class="logo">
+//         <a href="#"class="logo__link">
+//             <img src="images/logo.png"alt=""class="logo__pic">
+//         </a>
+//     </div>

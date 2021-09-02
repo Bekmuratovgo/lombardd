@@ -1,0 +1,138 @@
+.navigation-vert {
+    margin: 0;
+
+    &__list {
+    	
+    }
+
+    &__item {
+        margin: 0 0 10px;
+    }
+
+    &__item_state_current &__link {
+        color: #D4000C;
+    }
+
+    &__link {
+        font: 11px/16px @font;
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    &__text {
+
+    }
+}
+
+// <nav class="l-navigation-vert">
+//     <ul class="navigation-vert">
+//         <li class="navigation-vert__item">
+//             <a href="#" class="navigation-vert__link">
+//                 <span class="navigation-vert__text">Варочные панели</span>
+//             </a>
+//             <div class="l-navigation-vert-submenu">
+//                 <div class="l-navigation-vert-submenu__inner">
+//                     <ul class="navigation-vert-submenu">
+//                         <li class="navigation-vert-submenu__item">
+//                             <a class="navigation-vert-submenu__link" href="#">
+//                                 <span class="navigation-vert-submenu__text">Однокамерные&nbsp;холодильники</span>
+//                             </a>
+//                         </li>
+//                         <li class="navigation-vert-submenu__item">
+//                             <a class="navigation-vert-submenu__link" href="#">
+//                                 <span class="navigation-vert-submenu__text">Двухкамерные&nbsp;холодильники</span>
+//                             </a>
+//                         </li>
+//                         <li class="navigation-vert-submenu__item">
+//                             <a class="navigation-vert-submenu__link" href="#">
+//                                 <span class="navigation-vert-submenu__text">Side-by-side</span>
+//                             </a>
+//                         </li>
+//                         <li class="navigation-vert-submenu__item">
+//                             <a class="navigation-vert-submenu__link" href="#">
+//                                 <span class="navigation-vert-submenu__text">Винные&nbsp;шкафы</span>
+//                             </a>
+//                         </li>
+//                     </ul>
+//                 </div>
+//             </div>
+//         </li>
+//         <li class="navigation-vert__item">
+//             <a href="#" class="navigation-vert__link">
+//                 <span class="navigation-vert__text">Духовые шкафы</span>
+//             </a>
+//         </li>
+//         <li class="navigation-vert__item">
+//             <a href="#" class="navigation-vert__link">
+//                 <span class="navigation-vert__text">Вытяжки</span>
+//             </a>
+//         </li>
+//         <li class="navigation-vert__item">
+//             <a href="#" class="navigation-vert__link">
+//                 <span class="navigation-vert__text">Холодильники</span>
+//             </a>
+//         </li>
+//     </ul>
+// </nav>
+
+// accardeon явно надо смотреть var slides = $(buttons).next().next(); где находится
+	// menu
+	// (function() {
+
+	//     var buttons = $(".js-menu-group-trigger");
+	//     var slides = $(buttons).next().next();
+
+	//     $(slides).css({
+	//     	display: "none"
+	//     });
+
+
+	//     $(buttons).each(function() {
+
+	//         if($(this).parent().hasClass("navigation-vert__item_state_current")) {
+
+	//             $(this).next().next().slideDown(function() {
+	//             	$(this).css({
+	//             		display: "block"
+	//             	});
+	//             });
+
+	//         }
+
+	//     });
+
+	//     $(buttons).click(function() {
+
+	//         var this_slide = $(this).next().next();
+	//         var _this = this;
+
+	//         $(slides).each(function(i) {
+
+	//             if(this != this_slide[0]) {
+
+	//                 $(buttons[i]).parent().removeClass("navigation-vert__item_state_current");
+	//                 $(this).slideUp();
+
+	//             }
+
+	//         });
+
+	//         if($(this).hasClass("navigation-vert__item_state_current")) {
+
+	//             $(this_slide).slideUp();
+	//             $(_this).parent().removeClass("navigation-vert__item_state_current");
+
+	//         }
+	//         else {
+
+	//             $(this_slide).slideDown();
+	//             $(_this).parent().addClass("navigation-vert__item_state_current");
+
+	//         }
+
+	//         return false;
+
+	//     });
+
+	// })();

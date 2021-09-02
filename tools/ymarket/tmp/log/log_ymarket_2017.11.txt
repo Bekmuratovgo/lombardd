@@ -1,0 +1,182 @@
+20.11.2017 21:48:25 - 
+NEED_UPDATE: 1
+UPDATE_EVENT: OnAfterIBlockElementUpdate
+Статус обновления: требуется обновление по событию 'OnAfterIBlockElementUpdate'
+
+MODE: manual
+Processing iblock '' (usual: 0, base: 0 )
+Processing complete
+File size: 522 b
+Processing time: 28.615 sec.
+
+Errors:
+Processing complete / Error saving xml
+----------
+20.11.2017 22:30:28 - 
+NEED_UPDATE: 1
+UPDATE_EVENT: OnAfterIBlockElementUpdate
+Статус обновления: требуется обновление по событию 'OnAfterIBlockElementUpdate'
+
+MODE: manual
+Processing iblock '' (usual: 17829, base: 0 )
+Processing complete
+File size: 15.33 Mb
+File size: 15.33 Mb
+Processing time: 16.346 sec.
+----------
+20.11.2017 22:44:30 - 
+NEED_UPDATE: 0
+UPDATE_EVENT: YML_GENERATOR
+Статус обновления: обновление не требуется
+
+MODE: manual
+Processing iblock '' (usual: 17829, base: 0 )
+Processing complete
+File size: 13.8 Mb
+File size: 13.8 Mb
+Processing time: 27.23 sec.
+----------
+20.11.2017 22:55:46 - 
+NEED_UPDATE: 0
+UPDATE_EVENT: YML_GENERATOR
+Статус обновления: обновление не требуется
+
+MODE: manual
+Processing iblock '' (usual: 0, base: 0 )
+Processing complete
+File size: 3.17 Kb
+File size: 3.17 Kb
+Processing time: 0.574 sec.
+----------
+20.11.2017 22:56:39 - 
+NEED_UPDATE: 0
+UPDATE_EVENT: YML_GENERATOR
+Статус обновления: обновление не требуется
+
+MODE: manual
+Processing iblock '' (usual: 17829, base: 0 )
+Processing complete
+File size: 14.25 Mb
+File size: 14.25 Mb
+Processing time: 26.906 sec.
+----------
+20.11.2017 22:58:34 - 
+NEED_UPDATE: 0
+UPDATE_EVENT: YML_GENERATOR
+Статус обновления: обновление не требуется
+
+MODE: manual
+Processing iblock '' (usual: 17829, base: 0 )
+Processing complete
+File size: 14.21 Mb
+File size: 14.21 Mb
+Processing time: 16.269 sec.
+----------
+20.11.2017 23:13:08 - 
+NEED_UPDATE: 0
+UPDATE_EVENT: YML_GENERATOR
+Статус обновления: обновление не требуется
+
+MODE: manual
+Processing iblock '' (usual: 17829, base: 0 )
+Processing complete
+File size: 14.21 Mb
+File size: 14.21 Mb
+Processing time: 18.953 sec.
+----------
+20.11.2017 23:35:20 - 
+NEED_UPDATE: 0
+UPDATE_EVENT: YML_GENERATOR
+Статус обновления: обновление не требуется
+
+MODE: manual
+Processing iblock '' (usual: 17829, base: 0 )
+Processing complete
+File size: 14.75 Mb
+File size: 14.75 Mb
+Processing time: 15.488 sec.
+----------
+20.11.2017 23:41:35 - 
+NEED_UPDATE: 0
+UPDATE_EVENT: YML_GENERATOR
+Статус обновления: обновление не требуется
+
+MODE: manual
+Processing iblock '' (usual: 17829, base: 0 )
+Processing complete
+File size: 14.36 Mb
+File size: 14.36 Mb
+Processing time: 16.45 sec.
+----------
+21.11.2017 15:43:52 - 
+NEED_UPDATE: 0
+UPDATE_EVENT: YML_GENERATOR
+Статус обновления: требуется обновление по таймауту (3600 сек)
+
+MODE: manual
+Processing iblock '' (usual: 17829, base: 0 )
+Processing complete
+File size: 14.36 Mb
+File size: 14.36 Mb
+Processing time: 35.251 sec.
+----------
+21.11.2017 15:45:55 - 
+NEED_UPDATE: 0
+UPDATE_EVENT: YML_GENERATOR
+Статус обновления: обновление не требуется
+
+MODE: manual
+Processing iblock '' (usual: 17829, base: 0 )
+Processing complete
+File size: 14.89 Mb
+File size: 14.89 Mb
+Processing time: 25.809 sec.
+----------
+21.11.2017 15:49:17 - 
+NEED_UPDATE: 0
+UPDATE_EVENT: YML_GENERATOR
+Статус обновления: обновление не требуется
+
+MODE: manual
+Processing iblock '' (usual: 17829, base: 0 )
+Processing complete
+File size: 15.55 Mb
+File size: 15.55 Mb
+Processing time: 18.313 sec.
+----------
+21.11.2017 15:51:54 - 
+NEED_UPDATE: 0
+UPDATE_EVENT: YML_GENERATOR
+Статус обновления: обновление не требуется
+
+MODE: manual
+Processing iblock '' (usual: 6906, base: 0 )
+Processing complete
+File size: 6.48 Mb
+File size: 6.48 Mb
+Processing time: 20.027 sec.
+----------
+21.11.2017 15:53:15 - 
+NEED_UPDATE: 0
+UPDATE_EVENT: YML_GENERATOR
+Статус обновления: обновление не требуется
+
+MODE: manual
+Processing iblock '' (usual: 6906, base: 0 )
+Processing complete
+File size: 6.28 Mb
+File size: 6.28 Mb
+Processing time: 14.957 sec.
+----------
+21.11.2017 16:41:09 - 
+NEED_UPDATE: 0
+UPDATE_EVENT: YML_GENERATOR
+Статус обновления: обновление не требуется
+
+MODE: manual
+Processing iblock '' (usual: 6906, base: 0 )
+Processing complete
+File size: 6.74 Mb
+File size: 6.74 Mb
+Processing time: 16.904 sec.
+----------

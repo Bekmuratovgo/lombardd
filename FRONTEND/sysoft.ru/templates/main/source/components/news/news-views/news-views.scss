@@ -1,0 +1,208 @@
+.news-views {
+	$w1: 315 / 825 * 100%;
+	$w2: 100% - $w1;
+
+	&__row {
+		display: flex;
+		align-items: stretch;
+	}
+
+	&__menu {
+		width: $w1;
+		position: relative;
+		z-index: 2;
+		background: #34393c;
+	}
+
+	&__link {
+		height: 156px;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.29;
+		color: #b2b4b7;
+		padding: 0 22px;
+		display: table;
+		position: relative;
+
+		&.active {
+			background: #494d50;
+		}
+	}
+
+	&__table {
+		display: table-row;
+	}
+
+	&__cell {
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+
+		small {
+			display: none;
+		}
+	}
+
+	&__ltxt {
+		display: block;
+		max-height: 90px;
+		overflow: hidden;
+
+		span {
+			display: block;
+			font-size: 16px;
+			line-height: 1.31;
+			text-align: left;
+			color: #ffffff;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__link.active &__cell {
+		&:after {
+			position: absolute;
+			right: -38px;
+			border-top: 16px solid transparent;
+			border-bottom: 16px solid transparent;
+			border-left: 16px solid #494d50;
+			margin-top: -16px;
+			top: 50%;
+			content: '';
+		}
+	}
+
+	&__section {
+		width: $w2; 
+	}
+
+	&__block {
+		padding: 26px 24px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		height: 624px;
+		position: relative;
+	}
+
+	&__content {
+		position: absolute;
+		left: 24px;
+		bottom: 22px;
+		right: 24px;
+	}
+
+	&__name {
+		font-size: 24px;
+		font-weight: normal;
+		line-height: normal;
+		color: #ffffff;
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 1.31;
+		text-align: left;
+		color: #b2b4b7;
+		margin-bottom: 25px;
+	}
+
+	&__footer {
+		color: #b2b4b7;
+		font-size: 12px;
+		line-height: 1.75;
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+
+	&__reviews {
+		float: right;
+		margin-left: 25px;
+		color: #b2b4b7;
+		padding: 0 0 0 25px;
+		background: svg-load('message.svg', fill=#b2b4b7) no-repeat left 5px;
+		background-size: 18px auto;
+	}
+
+	&__view {
+		float: right;
+		color: #b2b4b7;
+		padding: 0 0 0 25px;
+		background: svg-load('eye.svg', fill=#b2b4b7) no-repeat left 5px;
+		background-size: 18px auto;
+	}
+
+	&__sep {
+		margin: 0 6px;
+	}
+
+	&__razdel {
+		font-size: 12px;
+	}
+
+	&__buttons {
+		@include clearfix;
+	}
+
+	&__right {
+		float: right;
+	}
+
+	&__more {
+		@include btnBg1($height: 36px);
+	}
+
+	@media (max-width: 1030px) {
+		margin-bottom: 20px;
+	}
+
+	@media (max-width: 1030px) {
+		margin-bottom: 20px;
+	}
+
+	@media (max-width: 760px) {
+		margin-bottom: 20px;
+
+		&__menu {
+			width: 40px;
+		}
+
+		&__cell {
+
+			small {
+				display: block;
+			}
+		}
+
+		&__ltxt {
+			display: none;
+		}
+
+		&__section {
+			width: calc(100% - 40px);
+		}
+
+		&__link {
+			width: 100%;
+			padding: 0;
+			text-align: center;
+			font-size: 25px;
+		}
+
+		&__link.active &__cell {
+			&:after {
+				right: -15px;
+			}
+		}
+	}
+
+	@media (--small) {
+
+		&__right {
+			float: none;
+			margin-bottom: 5px;
+		}
+	}
+}

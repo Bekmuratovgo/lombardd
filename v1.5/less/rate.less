@@ -1,0 +1,193 @@
+.rate {
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__title {
+		margin-bottom: 20px;
+		color: #d99503;
+		font-family: Arsenal;
+		font-size: 26px;
+		font-weight: 700;
+		line-height: 29px;
+	}
+
+	&__table {
+		width: 1128px;
+		margin-left: -44px;
+		margin-right: -44px;
+		margin-bottom: 60px;
+		padding: 20px 10px;
+		font-size: 0;
+		background-color: #f3f3f3;
+	}
+
+	&__block {
+		display: inline-block;
+		vertical-align: middle;
+		border-right: 1px solid #e8e8e8;
+		padding-left: 18px;
+		padding-right: 18px;
+
+		&:last-child{
+			border-right: none;
+		}
+	}
+
+	&__price {
+		margin-bottom: 40px;
+		color: #010101;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 27px;
+
+		&_title{
+			font-size: 18px;
+		}
+	}
+
+	&__percentage {
+		min-height: 46px;
+		color: #010101;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 27px;
+
+		&_title{
+			font-size: 18px;
+		}
+
+		span {
+			display: block;
+			color: #828282;
+			font-weight: 400;
+		}
+	}
+
+	&__condition {
+
+		&-title {
+			margin-bottom: 15px;
+			color: #252525;
+			font-family: Arsenal;
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 40px;
+		}
+
+		li {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__offers {
+		width: 35%;
+	}
+
+	&__offer {
+		margin-bottom: 20px;
+		background-color: #f3f3f3;
+		padding: 20px 30px;
+	}
+
+	@media (max-width: 1166px) and (min-width: @screen-sm) {
+
+		&__table {
+			order: -2;
+			width: 57%;
+			margin-left: 0;
+			margin-right: 0;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		&__block {
+			display: flex;
+			justify-content: space-between;
+			border-right: none;
+			margin-bottom: 20px;
+
+			&:first-child {
+				padding-bottom: 20px;
+				border-bottom: 1px solid #e8e8e8;
+			}
+
+		}
+
+		&__price {
+			margin-bottom: 0;
+		}
+
+		&__percentage {
+			min-height: inherit;
+		}
+
+		&__offers {
+			order: -1;
+			width: 42%;
+		}
+
+		&__offer {
+			margin-bottom: 10px;
+		}
+
+		&__condition {
+			width: 100%;
+		}
+	}
+
+	@media (max-width:@screen-xs-max) {
+
+		&__table {
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 20px;
+			order: -2;
+		}
+
+		&__title{
+			text-align: center;
+		}
+
+
+		&__block {
+			display: flex;
+			justify-content: space-between;
+			border-right: none;
+			margin-bottom: 20px;
+
+			&:first-child {
+				padding-bottom: 10px;
+				border-bottom: 1px solid #e8e8e8;
+			}
+		}
+
+		&__price {
+			margin-bottom: 0;
+		}
+
+		&__percentage {
+			min-height: inherit;
+		}
+
+
+		&__offers {
+			width: 100%;
+			order: -1;
+			margin-bottom: 20px;
+		}
+
+		&__condition{
+			width: 100%;
+
+			&-title{
+				text-align: center;
+			}
+		}
+	}
+
+}

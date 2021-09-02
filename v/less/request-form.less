@@ -1,0 +1,66 @@
+.request-form {
+	line-height: 1;
+	padding: 0 45px;
+
+	.xs({
+		padding: 0 20px;
+	});
+
+	&_franchise {
+		max-width: 927px;
+		margin: 0 auto;
+	}
+
+	&_center {
+		max-width: 573px;
+		margin: 0 auto;
+	}
+
+	&__form {
+		max-width: 523px;
+	}
+
+	&__input {
+		width: 100%;
+		height: 46px;
+		margin-bottom: 17px;
+		display: block;
+		padding: 0 29px;
+		font-size: 16px;
+		font-weight: bold;
+
+		.xs({
+			padding: 0 20px;
+		});
+	}
+
+	&__msg {
+		width: 100%;
+		height: 125px;
+		margin-bottom: 17px;
+		display: block;
+		font-size: 16px;
+		padding: 10px 30px !important;
+		font-weight: bold;
+
+		.xs({
+			font-size: 14px;
+			padding: 10px 20px !important;
+		});
+	}
+
+	&__submit {
+		margin-top: 9px;
+		.size(436 / 523 * 100%, 64px);
+		border: none;
+		font-family: Arsenal;
+		font-size: 22px;
+		font-weight: 700;
+		.btn-1();
+
+		.xs({
+			font-size: 20px;
+			width: 100%;
+		});
+	}
+}

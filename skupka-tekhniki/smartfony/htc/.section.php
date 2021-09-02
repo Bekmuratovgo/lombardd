@@ -1,0 +1,5 @@
+ <?
+$sSectionName = "HTC";
+$arDirProperties = array(
+);
+?>

@@ -1,0 +1,130 @@
+.filter-slide {
+	width: 380px;
+	padding: 47px 22px 0;
+
+	.xs({
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-bottom: 20px;
+		width: 100%;
+	});
+
+	&__top {
+
+	}
+
+	&__slider {
+		position: relative;
+		.size(100%, 5px);
+		border-bottom: 1px solid rgb(252, 1, 1);
+		border-left: 1px solid rgb(252, 1, 1);
+		border-right: 1px solid rgb(252, 1, 1);
+		margin-bottom: 25px;
+	}
+
+	&__handle {
+		background-color: rgb(244, 3, 3);
+		font-size: 14px;
+		font-weight: bold;
+		color: #fff;
+		position: absolute;
+		left: 0;
+		bottom: 14px;
+		margin-left: -14px;
+		z-index: 1;
+		cursor: pointer;
+
+		&:after {
+			position: absolute;
+			left: 50%;
+			bottom: -5px;
+			margin-left: -6px;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			border-top: 6px solid rgb(244, 3, 3);
+			content: '';
+		}
+
+		&-text {
+			padding: 8px 10px;
+		}
+
+		&-minus {
+			width: 20px;
+			height: 100%;
+			position: absolute;
+			cursor: pointer;
+			left: -20px;
+			top: 0;
+
+			&:before {
+				height: 2px;
+				width: 12px;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				margin-top: -1px;
+				content: '';
+				background-color: rgb(218, 218, 218);
+			}
+
+			&:hover:before {
+				background-color: rgb(244, 3, 3);
+			}
+		}
+
+		&-plus {
+			width: 20px;
+			height: 100%;
+			position: absolute;
+			cursor: pointer;
+			right: -20px;
+			top: 0;
+
+			&:before {
+				height: 2px;
+				width: 12px;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				margin-top: -1px;
+				content: '';
+				background-color: rgb(218, 218, 218);
+			}
+
+			&:after {
+				width: 2px;
+				height: 12px;
+				position: absolute;
+				right: 5px;
+				top: 50%;
+				margin-top: -6px;
+				content: '';
+				background-color: rgb(218, 218, 218);
+			}
+
+			&:hover:before,
+			&:hover:after {
+				background-color: rgb(244, 3, 3);
+			}
+		}
+	}
+
+	&__range {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__footer {
+		margin-bottom: 30px;
+	}
+
+	&__input {
+		.size(110px, 41px);
+		padding: 0 20px !important;
+		font-size: 15px;
+	}
+}

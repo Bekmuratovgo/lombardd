@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+
+	<title>Example</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Arsenal:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/taiLib.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+
+	<script src="js/lazysizes.min.js" type="text/javascript" async></script>
+
+</head>
+<body>
+
+	<div class="wrapper wrapper_main" id="js-wrapper">
+
+		<div class="main">
+			<div class="main__section">
+				<div class="main__row">
+					<div class="main__col js-main__col">
+
+						<div class="main__top">
+
+						<div class="header-phone">
+							<div class="header-phone__text">Контакты</div>
+							<a href="tel:+79867584346" class="header-phone__tel">+7 (986) 758-43-46</a>
+						</div>
+						<!-- /.header-phone -->
+
+						</div>
+						<div class="main__bottom">
+
+							<div class="main-title">
+								<div class="main-title__photo">
+									<img src="images/main-title__pic1.png" alt="" class="main-title__pic">
+								</div>
+								<div class="main-title__name">
+									Ломбард
+								</div>
+								<div class="main-title__line"></div>
+								<div class="main-title__text">
+									Займы, любое движимое имущество
+								</div>
+							</div>
+							<!-- /.main-title -->
+
+						</div>
+						<a href="#" class="main__link"></a>
+
+					</div>
+					<div class="main__col js-main__col">
+
+						<div class="main__top">
+
+							<div class="logo">
+								<a href="#" class="logo__link">
+									<img src="data:image/png;base64,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" alt="" class="logo__pic">
+									<span class="logo__text">Первый Ювелирный</span>
+									<span class="logo__info">Интернет-магазин</span>
+								</a>
+							</div>
+							<!-- /.logo -->
+
+						</div>
+						<div class="main__bottom">
+
+							<div class="main-title">
+								<div class="main-title__photo">
+									<img src="images/main-title__pic2.png" alt="" class="main-title__pic">
+								</div>
+								<div class="main-title__name">
+									Ювелирный магазин
+								</div>
+								<div class="main-title__line main-title__line_center"></div>
+								<div class="main-title__text">
+									Скидка до 50% при покупке онлайн
+								</div>
+							</div>
+							<!-- /.main-title -->
+
+						</div>
+						<a href="#" class="main__link"></a>
+
+					</div>
+					<div class="main__col js-main__col">
+
+						<div class="main__top">
+
+							<div class="header-address">
+								14 филиалов <span>в Москве</span>
+								<a href="#" class="header-address__link"></a>
+							</div>
+							<!-- /.header-address -->
+
+							<div class="menu-header">
+								<div class="menu-header__burger" id="js-menu-header__burger">
+									<span><i></i></span>
+								</div>
+								<!-- /.menu-header__burger -->
+								<div class="menu-header__overlay" id="js-menu-header__overlay"></div>
+								<div class="menu-header__section" id="js-menu-header__section">
+									<div class="menu-header__slide">
+										<div class="menu-header__scroll">
+
+											<div class="menu-header__field">
+
+												<div class="menu-header__header">
+													<div class="menu-header__photo">
+														<img src="images/menu-header__pic1.jpg" alt="" class="menu-header__pic">
+													</div>
+													<div class="menu-header__desc">
+														<div class="menu-header__title">Главная страница</div>
+														Все сервисы Первого Ювелирного
+													</div>
+													<a href="#" class="menu-header__forward"></a>
+												</div>
+												<!-- /.menu-header__header -->
+												<div class="menu-header__menu">
+													<a href="#" class="menu-header__link">Филиалы</a>
+													<a href="#" class="menu-header__link active">Контакты</a>
+													<a href="#" class="menu-header__link">Кабинет</a>
+												</div>
+												<!-- /.menu-header__menu -->
+
+											</div>
+											<!-- /.menu-header__field -->
+
+											<div class="menu-header__field">
+
+												<div class="menu-header__header">
+													<div class="menu-header__photo">
+														<img src="images/menu-header__pic2.jpg" alt="" class="menu-header__pic">
+													</div>
+													<div class="menu-header__desc">
+														<div class="menu-header__title">Магазин ювелирных изделий</div>
+														Скидки до 50% при покупке онлайн
+													</div>
+													<a href="#" class="menu-header__forward"></a>
+												</div>
+												<!-- /.menu-header__header -->
+												<div class="menu-header__menu">
+													<a href="#" class="menu-header__link">Каталог товаров</a>
+													<a href="#" class="menu-header__link">Акции</a>
+													<a href="#" class="menu-header__link">Франшиза</a>
+													<a href="#" class="menu-header__link">Новости</a>
+												</div>
+												<!-- /.menu-header__menu -->
+												<div class="menu-header__basket">
+													<a href="#" class="menu-header__forward">У вас 6 товаров в корзине</a>
+												</div>
+												<!-- /.menu-header__basket -->
+
+											</div>
+											<!-- /.menu-header__field -->
+
+											<div class="menu-header__field">
+
+												<div class="menu-header__header">
+													<div class="menu-header__photo">
+														<img src="images/menu-header__pic3.jpg" alt="" class="menu-header__pic">
+													</div>
+													<div class="menu-header__desc">
+														<div class="menu-header__title">Ломбард</div>
+														Займы, любое движимое имущество
+													</div>
+													<a href="#" class="menu-header__forward"></a>
+												</div>
+												<!-- /.menu-header__header -->
+												<div class="menu-header__menu">
+													<a href="#" class="menu-header__link">Займ</a>
+													<a href="#" class="menu-header__link">Ювелирный калькулятор</a>
+													<a href="#" class="menu-header__link">Авто</a>
+													<a href="#" class="menu-header__link">VIP</a>
+													<a href="#" class="menu-header__link">Техника</a>
+													<a href="#" class="menu-header__link">Франшиза</a>
+												</div>
+												<!-- /.menu-header__menu -->
+
+											</div>
+											<!-- /.menu-header__field -->
+
+											<div class="menu-header__field">
+
+												<div class="menu-header__header">
+													<div class="menu-header__photo">
+														<img src="images/menu-header__pic4.jpg" alt="" class="menu-header__pic">
+													</div>
+													<div class="menu-header__desc">
+														<div class="menu-header__title">Драгоценные металлы</div>
+														Скупка и продажа для юридических лиц
+													</div>
+													<a href="#" class="menu-header__forward"></a>
+												</div>
+												<!-- /.menu-header__header -->
+												<div class="menu-header__menu">
+													<a href="#" class="menu-header__link">Скупка металлов</a>
+													<a href="#" class="menu-header__link">Продажа</a>
+													<a href="#" class="menu-header__link">Документы</a>
+													<a href="#" class="menu-header__link">Правила приёма</a>
+													<a href="#" class="menu-header__link">Доставка и перевозка </a>
+													<a href="#" class="menu-header__link">Партнеры</a>
+												</div>
+												<!-- /.menu-header__menu -->
+
+											</div>
+											<!-- /.menu-header__field -->
+
+										</div>
+									</div>
+								</div>
+								<!-- /.menu-header__section -->
+							</div>
+							<!-- /.menu-header -->
+
+						</div>
+						<div class="main__bottom">
+
+							<div class="main-title">
+								<div class="main-title__photo">
+									<img src="images/main-title__pic3.png" alt="" class="main-title__pic">
+								</div>
+								<div class="main-title__name">
+									Драгоценные металлы
+								</div>
+								<div class="main-title__line main-title__line_right"></div>
+								<div class="main-title__text">
+									Скупка и продажа для юридических лиц
+								</div>
+							</div>
+							<!-- /.main-title -->
+
+						</div>
+						<a href="#" class="main__link"></a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- /.wrapper -->
+
+</body>
+</html>

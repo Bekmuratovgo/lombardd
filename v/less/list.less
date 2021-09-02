@@ -1,0 +1,38 @@
+.list {
+	list-style: none;
+	margin: 0 0 35px;
+	padding: 0;
+
+	li {
+		color: #2c2c2c;
+		font-size: 14px;
+		line-height: 26px;
+		margin-bottom: 15px;
+	}
+
+	&__cell {
+		display: table-cell;
+		vertical-align: top;
+		padding-left: 20px;
+
+		&:first-child {
+			width: 30px;
+			border-right: 1px solid #1b60ab;
+			padding-left: 0;
+		}
+	}
+
+	&__count {
+		font-size: 18px;
+		font-weight: bold;
+		color: #3c599b;
+	}
+
+	&__disc {
+		display: block;
+		margin-top: 8px; 
+		.size(8px);
+		.border-radius(4px);
+		background-color: #3b599b;
+	}
+}

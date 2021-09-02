@@ -1,0 +1,38 @@
+<br><font color=#ff0000>MySQL Query Error: 
+		INSERT INTO
+        	z_article_log (
+            `user_id`,
+            `user_login`,
+            `article`,
+            `path`,
+            `user_ip`,
+            `user_agent`,
+            `http_code`
+        )
+        VALUES (
+                '',
+                '',
+                '0009844',
+                'jewelry/0009844.jpg',
+                '31.177.95.221',
+                ,
+                404
+            )
+        </font>[You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '
+                404
+            )' at line 17]<br><br>
+<table cellpadding="1" cellspacing="0" width="35%" bgcolor="#9C9A9C">
+	<tr>
+		<td><table cellpadding="5" cellspacing="0" width="100%">
+			<tr>
+				<td bgcolor="#FFFFFF" align="center">
+					<FONT face="Verdana, Arial, Helvetica, sans-serif" size="-1">
+					<font color="#FF0000"><b>DB query error.</b></font><br>
+					Please try later.
+					</font><br>
+									</td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+<br><br><br>

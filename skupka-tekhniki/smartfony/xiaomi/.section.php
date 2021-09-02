@@ -1,0 +1,5 @@
+ <?
+$sSectionName = "Xiaomi";
+$arDirProperties = array(
+);
+?>

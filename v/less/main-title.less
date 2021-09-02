@@ -1,0 +1,122 @@
+.main-title {
+	text-align: center;
+	position: relative;
+	z-index: 1;
+
+	&__photo {
+		margin-bottom: 15px;
+	}
+
+	&__pic {
+		display: block;
+		margin: 0 auto;
+	}
+
+	&__name {
+		color: rgb(255, 255, 255);
+		font-family: Arsenal;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 43px;
+		max-width: 305px;
+		padding: 0 20px;
+		margin: 0 auto 21px;
+	}
+
+	&__text {
+		color: rgb(255, 255, 255);
+		font-family: "PT Sans";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		max-width: 253px;
+		margin: 0 auto;
+	}
+
+	&__line {
+		.size(198px, 1px);
+		.opacity(0.8);
+		background-color: rgb(255, 169, 5);
+		margin: 0 auto 18px;
+
+		&_center {
+			.size(178px, 1px);
+			.opacity(0.66);
+			background-color: rgb(159, 0, 0);
+		}
+
+		&_right {
+			.size(258px, 1px);
+			.opacity(0.8);
+			background-color: rgb(122, 80, 0);
+		}
+
+	}
+
+	.maxWidth(991px, {
+		padding: 0 20px;
+
+		&__photo {
+			margin-bottom: 20px;
+		}
+
+		&__name {
+			font-size: 32px;
+			line-height: 33px;
+			margin: 0 auto 20px;
+		}
+
+		&__line {
+			width: 138px !important;
+			margin-bottom: 20px;
+		}
+
+		&__text {
+			font-size: 14px;
+			line-height: 19px;
+		}
+
+	});
+
+	.xs({
+		opacity: 0;
+		transition: opacity 300ms;
+
+		.main__col.active & {
+			opacity: 1;
+		}
+	});
+
+	@media (max-height:400px) {
+
+		&__photo {
+			margin-bottom: 10px;
+		}
+
+		&__pic {
+			display: block;
+			margin: 0 auto;
+		}
+
+		&__name {
+			font-size: 32px;
+			line-height: 33px;
+			margin: 0 auto 15px;
+			max-width: 100%;
+		}
+
+		&__line {
+			margin-bottom: 15px;
+		}
+
+		&__text {
+			color: rgb(255, 255, 255);
+			font-family: "PT Sans";
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 22px;
+		}
+
+	}
+
+}

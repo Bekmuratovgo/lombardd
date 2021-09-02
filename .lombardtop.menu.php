@@ -1,0 +1,54 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+
+$aMenuLinks = Array(
+	Array(
+		"Ломбард", 
+		"http://".SITE_LOMBARD."/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Интернет-магазин", 
+		"http://".SITE_SHOP."/",
+		Array(),
+		Array(), 
+		"" 
+	),
+	Array(
+		"Драгметаллы", 
+		"http://".SITE_METAL."/", 
+		Array(),
+		Array(), 
+		"" 
+	),
+	/*Array(
+		"Новости и статьи", 
+		"#",//"http://".SITE_LOMBARD,
+		Array(),
+		Array(), 
+		"" 
+	),*/
+	Array(
+		"Франчайзинг", 
+		"http://1ombard.ru/",
+		Array(),
+		Array(), 
+		"" 
+	),
+	/*Array(
+		"Обучение", 
+		"#",//"http://".SITE_LOMBARD,
+		Array(),
+		Array(), 
+		"" 
+	),
+	Array(
+		"Обрудование", 
+		"#",//"http://".SITE_LOMBARD,
+		Array(),
+		Array(), 
+		"" 
+	)*/
+);
+?>

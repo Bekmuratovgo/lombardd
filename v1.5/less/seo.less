@@ -1,0 +1,114 @@
+.seo {
+
+	&__row {
+		font-size: 0;
+		margin: 0 -10px;
+	}
+
+	&__col {
+		width: 45%;
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 10px;
+
+		&:first-child {
+			width: 55%;
+
+		}
+	}
+
+	&__item {
+		padding-left: 10px;
+
+		&_border {
+			padding-right: 30px;
+			padding-left: 0;
+			border-right: 1px solid #eee;
+		}
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		color: #252525;
+		font-family: Arsenal;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 40px;
+		text-align: center;
+	}
+
+	&__text {
+		color: #050505;
+		font-family: "Myriad Pro";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	ol {
+		color: #050505;
+		font-size: 16px;
+	}
+
+	li {
+		margin-bottom: 15px;
+	}
+
+	@media (min-width: 768px) {
+		&__title {
+			text-align: left;
+
+		}
+	}
+
+	@media (min-width: 1000px) {
+
+		&__title {
+			max-width: 300px;
+			min-height: 80px;
+			margin-bottom: 19px;
+
+			&_desktop {
+				padding-top: 40px;
+			}
+		}
+	}
+
+	@media (max-width: 1000px) {
+
+		&_buy {
+			.seo__row {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.seo__col:nth-child(2) {
+				order: -1;
+			}
+		}
+
+		&__col {
+			width: 100%;
+
+			&:first-child {
+				width: 100%;
+			}
+		}
+
+		&__item {
+			padding-left: 0;
+			padding-right: 0;
+
+			&_border {
+				border-right: none;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,171 @@
+.main {
+	height: 100%;
+	background: url(../images/main_before.jpg) no-repeat left center, url(../images/main_after.jpg) no-repeat right center;
+	background-size: auto 100%;
+
+	@media (max-height:400px) {
+		background-size: 40px 100%;
+	}
+
+	&:after {
+		position: absolute;
+		left: 0;
+		top: 107px;
+		right: 0;
+		height: 1px;
+		.opacity(0.15);
+		background-color: rgb(15, 15, 15);
+		content: '';
+	}
+
+	&__section {
+		// padding: 0 40px;  // в будущем открыть, там будут стрелки навигации по магазинам
+		height: 100%;
+	}
+
+	&__row {
+		height: 100%;
+		.display(flex);
+		.justify-content(center);
+		.align-items(stretch);
+	}
+
+	&__col {
+		width: 100% / 3;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: center center;
+		position: relative;
+		.background-size(cover);
+
+		&:before,
+		&:after {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			content: '';
+		}
+
+		&:before {
+			// .background-image(linear-gradient(35deg, rgba(148, 141, 141, 0.62) 0%, rgba(26, 26, 26, 0.62) 100%));
+		}
+
+		&:after {
+			opacity: .45;
+			background: #1d1d1d;
+		}
+
+		&:hover:after,
+		&.active:after {
+			opacity: .32;
+		}
+
+		&:nth-child(1) {
+			background-image: url(../images/main__col1.jpg);
+		}
+
+		&:nth-child(2) {
+			background-image: url(../images/main__col2.jpg);
+		}
+
+		&:nth-child(3) {
+			background-image: url(../images/main__col3.jpg);
+		}
+
+	}
+
+	&__top {
+		height: ~'calc(100% - 294px)';
+	}
+
+	&__bottom {
+		height: 294px;
+	}
+
+	&__link {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+
+		.minWidth(768px, {
+			height: ~'calc(100% - 110px)';
+		});
+
+		.xs({
+			pointer-events: none;
+		});
+	}
+
+	&__col.active &__link {
+
+		.xs({
+			pointer-events: auto;
+		});
+	}
+
+	.sm({
+		&:after {
+			top: 90px;
+		}
+
+		&__section {
+			// padding: 0 30px;  // в будущем открыть, там будут стрелки навигации по магазинам
+		}
+
+		&__top {
+			height: ~'calc(100% - 280px)';
+		}
+
+		&__bottom {
+			height: 280px;
+		}
+
+	});
+
+	.xs({
+
+		&:after {
+			display: none;
+		}
+
+		&__section {
+			// padding: 0 37px; // в будущем открыть, там будут стрелки навигации по магазинам
+		}
+
+		&__col {
+			width: 12%;
+			transition: width 300ms;
+		}
+
+		&__col.active {
+			width: 76%;
+		}
+
+		&__top {
+			height: ~'calc(100% - 300px)';
+		}
+
+		&__bottom {
+			height: 300px;
+		}
+
+	});
+
+	@media (max-height:400px) {
+
+		&__top {
+			height: ~'calc(100% - 190px)';
+		}
+
+		&__bottom {
+			height: 190px;
+		}
+
+	}
+
+}

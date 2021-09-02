@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+
+	<title>Map</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="js/taiLib.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="wrapper" id="js-wrapper">
+
+	<div class="header">
+		<div class="header__inner">
+
+			<div class="header-phone header-phone_inner">
+				<div class="header-phone__text">Контакты</div>
+				<a href="tel:+79867584346" class="header-phone__tel">+7 (986) 758-43-46</a>
+			</div>
+			<!-- /.header-phone -->
+
+			<div class="header-consult">
+				Консультация онлайн
+				<a href="ajax/callback.html" data-ajax class="header-consult__link"></a>
+			</div>
+			<!-- /.header-consult -->
+
+			<div class="logo logo_inner">
+				<a href="#" class="logo__link">
+					<img
+							src="images/logo.png"
+							alt="" class="logo__pic">
+					<span class="logo__text">Первый Ювелирный</span>
+					<span class="logo__info">ломбард</span>
+				</a>
+			</div>
+			<!-- /.logo -->
+
+			<div class="header-address header-address_inner">
+				14 отделений <span>в Москве</span>
+				<a href="#" class="header-address__link"></a>
+			</div>
+			<!-- /.header-address -->
+
+			<div class="header-auth">
+				Кабинет
+				<a href="ajax/auth.html" data-ajax data-trigger="auth" class="header-auth__link"></a>
+			</div>
+			<!-- /.header-auth -->
+
+			<div class="menu-header menu-header_inner">
+				<div class="menu-header__burger" id="js-menu-header__burger">
+					<span><i></i></span>
+				</div>
+				<!-- /.menu-header__burger -->
+				<div class="menu-header__overlay" id="js-menu-header__overlay"></div>
+				<div class="menu-header__section" id="js-menu-header__section">
+					<div class="menu-header__slide">
+						<div class="menu-header__scroll">
+
+							<div class="menu-header__field">
+
+								<div class="menu-header__header">
+									<div class="menu-header__photo">
+										<img src="images/menu-header__pic1.jpg" alt="" class="menu-header__pic">
+									</div>
+									<div class="menu-header__desc">
+										<div class="menu-header__title">Главная страница</div>
+										Все сервисы Первого Ювелирного
+									</div>
+									<a href="#" class="menu-header__forward"></a>
+								</div>
+								<!-- /.menu-header__header -->
+								<div class="menu-header__menu">
+									<a href="#" class="menu-header__link">Филиалы</a>
+									<a href="#" class="menu-header__link active">Контакты</a>
+									<a href="#" class="menu-header__link">Кабинет</a>
+								</div>
+								<!-- /.menu-header__menu -->
+
+							</div>
+							<!-- /.menu-header__field -->
+
+							<div class="menu-header__field">
+
+								<div class="menu-header__header">
+									<div class="menu-header__photo">
+										<img src="images/menu-header__pic2.jpg" alt="" class="menu-header__pic">
+									</div>
+									<div class="menu-header__desc">
+										<div class="menu-header__title">Магазин ювелирных изделий</div>
+										Скидки до 50% при покупке онлайн
+									</div>
+									<a href="#" class="menu-header__forward"></a>
+								</div>
+								<!-- /.menu-header__header -->
+								<div class="menu-header__menu">
+									<a href="#" class="menu-header__link">Каталог товаров</a>
+									<a href="#" class="menu-header__link">Акции</a>
+									<a href="#" class="menu-header__link">Франшиза</a>
+									<a href="#" class="menu-header__link">Новости</a>
+								</div>
+								<!-- /.menu-header__menu -->
+								<div class="menu-header__basket">
+									<a href="#" class="menu-header__forward">У вас 6 товаров в корзине</a>
+								</div>
+								<!-- /.menu-header__basket -->
+
+							</div>
+							<!-- /.menu-header__field -->
+
+							<div class="menu-header__field gold">
+
+								<div class="menu-header__header">
+									<div class="menu-header__photo">
+										<img src="images/menu-header__pic3.jpg" alt="" class="menu-header__pic">
+									</div>
+									<div class="menu-header__desc">
+										<div class="menu-header__title">Ломбард</div>
+										Займы, любое движимое имущество
+									</div>
+									<a href="#" class="menu-header__forward"></a>
+								</div>
+								<!-- /.menu-header__header -->
+								<div class="menu-header__menu">
+									<a href="#" class="menu-header__link">Займ</a>
+									<a href="#" class="menu-header__link">Ювелирный калькулятор</a>
+									<a href="#" class="menu-header__link">Авто</a>
+									<a href="#" class="menu-header__link">VIP</a>
+									<a href="#" class="menu-header__link">Техника</a>
+									<a href="#" class="menu-header__link">Франшиза</a>
+								</div>
+								<!-- /.menu-header__menu -->
+
+							</div>
+							<!-- /.menu-header__field -->
+
+							<div class="menu-header__field gold">
+
+								<div class="menu-header__header">
+									<div class="menu-header__photo">
+										<img src="images/menu-header__pic4.jpg" alt="" class="menu-header__pic">
+									</div>
+									<div class="menu-header__desc">
+										<div class="menu-header__title">Драгоценные металлы</div>
+										Скупка и продажа для юридических лиц
+									</div>
+									<a href="#" class="menu-header__forward"></a>
+								</div>
+								<!-- /.menu-header__header -->
+								<div class="menu-header__menu">
+									<a href="#" class="menu-header__link">Скупка металлов</a>
+									<a href="#" class="menu-header__link">Продажа</a>
+									<a href="#" class="menu-header__link">Документы</a>
+									<a href="#" class="menu-header__link">Правила приёма</a>
+									<a href="#" class="menu-header__link">Доставка и перевозка </a>
+									<a href="#" class="menu-header__link">Партнеры</a>
+								</div>
+								<!-- /.menu-header__menu -->
+
+							</div>
+							<!-- /.menu-header__field -->
+
+						</div>
+					</div>
+				</div>
+				<!-- /.menu-header__section -->
+			</div>
+			<!-- /.menu-header -->
+
+		</div>
+		<!-- /.header__inner -->
+	</div>
+	<!-- /.header -->
+
+	<div class="header-bottom">
+		<div class="header-bottom__inner">
+			<div class="header-bottom__row">
+				<div class="header-bottom__col">
+
+					<nav class="menu-horiz">
+						<ul class="menu-horiz__list">
+							<li class="menu-horiz__item active">
+								<a href="#" class="menu-horiz__link">Получить заём</a>
+							</li>
+							<li class="menu-horiz__item">
+								<a href="#" class="menu-horiz__link">Скупка золота</a>
+							</li>
+
+							<li class="menu-horiz__item menu-horiz__item_brilliants-mobile">
+								<a href="#" class="menu-horiz__link">Бриллианты</a>
+							</li>
+						</ul>
+						<!-- /.menu-horiz__list -->
+					</nav>
+					<!-- /.menu-horiz -->
+
+				</div>
+				<div class="header-bottom__col">
+
+					<nav class="menu-horiz">
+						<ul class="menu-horiz__list">
+							<li class="menu-horiz__item menu-horiz__item_brilliants">
+								<a href="#" class="menu-horiz__link">Бриллианты</a>
+							</li>
+							<li class="menu-horiz__item menu-horiz__item_franchise">
+								<a href="#" class="menu-horiz__link">Франшиза</a>
+							</li>
+							<li class="menu-horiz__item menu-horiz__item_right">
+								<a href="#" class="menu-horiz__link">Отзывы</a>
+							</li>
+						</ul>
+						<!-- /.menu-horiz__list -->
+					</nav>
+					<!-- /.menu-horiz -->
+
+					<!--					</div> -->
+				</div>
+				<!-- /.header-bottom__row -->
+			</div>
+		</div>
+	</div>
+	<!-- /.header-bottom -->
+
+	<div class="middle">
+		<div class="middle__container">
+
+			<div class="content">
+
+				<!--start breadcrumbs-->
+				<div class="breadcrumbs">
+					<div class="container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="#">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">Ломбард «Аэропорт»</li>
+						</ul>
+					</div>
+				</div>
+				<!--end breadcrumbs-->
+
+				<div class="page-title page-title_map">Ломбард «Аэропорт»</div>
+
+				<div class="contact">
+
+					<div class="contact__popup" id="js-contact-popup">
+
+						<div class="contact-address">
+							<div class="contact-address__col">
+								<div class="contact-address__metro">
+									<div class="contact-address__select" id="js-contact-address__select">
+										<span class="contact-address__button contact-address__button_icon">Белорусская</span>
+										<div class="contact-address__text contact-address__text_color">
+											C 9:00 до 21:00, без выходных
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="contact-address__col" id="js-contact-address__col_input">
+								<div class="contact-address__text">
+									Ломбард: <a href="tel:+79689170983">+7 (968) 917-09-83</a>
+								</div>
+								<div class="contact-address__text">
+									Улица Профсоюзная, 2/22
+								</div>
+							</div>
+						</div>
+						<!-- /.contact-address -->
+
+						<div class="contact-metro">
+							<div class="contact-metro__row">
+								<div class="contact-metro__col">
+									<div class="contact-metro__field">
+										<a href="#" data-coords="55.687761,37.573447" class="contact-metro__link js-contact-metro__link"
+											 data-metro="<span class='contact-address__button'>Академическая</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 21:00, без выходных</div>"
+											 data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79689170983'>+7 (968) 917-09-83</a></div><div class='contact-address__text'>Улица Профсоюзная, 2/22</div>">Академическая</a>
+									</div>
+
+
+									<div class="contact-metro__field">
+										<a href="#" data-coords="55.8078,37.638737" class="contact-metro__link js-contact-metro__link"
+											 data-metro="<span class='contact-address__button'>Алексеевская</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 21:00, без выходных</div>"
+											 data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79035657340'>+7 (903) 565-73-40 </a></div><div class='contact-address__text'>Проспект Мира, 112, вход через Гастроном (2-й этаж)</div>">Алексеевская</a>
+									</div>
+
+
+									<div class="contact-metro__field">
+										<a href="#" data-coords="55.898376,37.587344"
+											 class="contact-metro__link js-contact-metro__link active"
+											 data-metro="<span class='contact-address__button'>Алтуфьево</span><div class='contact-address__text contact-address__text_color'>C 9:00 до 22:00, без выходных</div>"
+											 data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79031583781'>+7 (903) 158-37-81</a></div><div class='contact-address__text'>Алтуфьевское шоссе, 86, к 1, ТЦ &quot;Ареал&quot;</div>">Алтуфьево</a>
+									</div>
+
+
+									<div class="contact-metro__field">
+										<a href="#" data-coords="55.800261,37.53287" class="contact-metro__link js-contact-metro__link"
+											 data-metro="<span class='contact-address__button'>Аэропорт</span><div class='contact-address__text contact-address__text_color'>с 9:00 до 21:00 без выходных</div>"
+											 data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79687781211'>+7 (968) 778-12-11</a></div><div class='contact-address__text'>ул. Черняховского 4А, вход через Добрынинский</div>">Аэропорт</a>
+									</div>
+
+
+									<div class="contact-metro__field">
+										<a href="#" data-coords="55.777439,37.582107" class="contact-metro__link js-contact-metro__link"
+											 data-metro="<span class='contact-address__button'>Белорусская</span><div class='contact-address__text contact-address__text_color'>с 9:00 до 19:00  выходной: сб, вс</div>"
+											 data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79651923572'> +7 (965) 192-35-72</a></div><div class='contact-address__text'>г. Москва, ул. Пресненский вал, д. 27, стр.15</div>">Белорусская</a>
+									</div>
+
+
+									<div class="contact-metro__field">
+										<a href="#" data-coords="55.642357,37.526115" class="contact-metro__link js-contact-metro__link"
+											 data-metro="<span class='contact-address__button'>Беляево</span><div class='contact-address__text contact-address__text_color'>с 9:00 до 22:00 без выходных</div>"
+											 data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79055123925'>+7 (905) 512-39-25</a></div><div class='contact-address__text'>Профсоюзная 102А, ТЦ &quot;Ареал&quot; </div>">Беляево</a>
+									</div>
+
+
+									<div class="contact-metro__field">
+										<a href="#" data-coords="55.659404,37.750451" class="contact-metro__link js-contact-metro__link"
+											 data-metro="<span class='contact-address__button'>Братиславская</span><div class='contact-address__text contact-address__text_color'></div>"
+											 data-text="<div class='contact-address__text'>Ломбард: <a href='tel:'></a></div><div class='contact-address__text'></div>">Братиславская</a>
+									</div>
+
+								</div>
+								<div class="contact-metro__col">
+
+									<div class="contact-metro__field">
+										<a href="#" data-coords="55.670077,37.554493" class="contact-metro__link js-contact-metro__link"
+											 data-metro="<span class='contact-address__button'>Новые черемушки</span><div class='contact-address__text contact-address__text_color'>с 9:00 до 21:00 без выходных</div>"
+											 data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+74956656842'>+7 (495) 665-68-42</a></div><div class='contact-address__text'>ул. Профсоюзная 56, супермаркет &quot;Виктория&quot;</div>">Новые
+											черемушки</a>
+									</div>
+
+
+									<div class="contact-metro__field">
+										<a href="#" data-coords="55.863207,37.604762" class="contact-metro__link js-contact-metro__link"
+											 data-metro="<span class='contact-address__button'>Отрадное</span><div class='contact-address__text contact-address__text_color'></div>"
+											 data-text="<div class='contact-address__text'>Ломбард: <a href='tel:'></a></div><div class='contact-address__text'></div>">Отрадное</a>
+									</div>
+
+
+									<div class="contact-metro__field">
+										<a href="#" data-coords="55.731658,37.664779" class="contact-metro__link js-contact-metro__link"
+											 data-metro="<span class='contact-address__button'>Пролетарская</span><div class='contact-address__text contact-address__text_color'>с 10:00 до 22:00 без выходных</div>"
+											 data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79096214761'>+7 (909) 621-47-61</a></div><div class='contact-address__text'>3-й Крутицкий пер., д.18, ТЦ &quot;МетроМаркет&quot;, 2 этаж</div>">Пролетарская</a>
+									</div>
+
+
+									<div class="contact-metro__field">
+										<a href="#" data-coords="55.67691,37.505831" class="contact-metro__link js-contact-metro__link"
+											 data-metro="<span class='contact-address__button'>Проспект Вернадского</span><div class='contact-address__text contact-address__text_color'></div>"
+											 data-text="<div class='contact-address__text'>Ломбард: <a href='tel:'></a></div><div class='contact-address__text'></div>">Проспект
+											Вернадского</a>
+									</div>
+
+
+									<div class="contact-metro__field">
+										<a href="#" data-coords="55.67793,37.562874" class="contact-metro__link js-contact-metro__link"
+											 data-metro="<span class='contact-address__button'>Профсоюзная</span><div class='contact-address__text contact-address__text_color'></div>"
+											 data-text="<div class='contact-address__text'>Ломбард: <a href='tel:'></a></div><div class='contact-address__text'></div>">Профсоюзная</a>
+									</div>
+
+
+									<div class="contact-metro__field">
+										<a href="#" data-coords="55.854067778391,37.476025661377"
+											 class="contact-metro__link js-contact-metro__link"
+											 data-metro="<span class='contact-address__button'>Речной вокзал</span><div class='contact-address__text contact-address__text_color'>с 9:00 до 21:00 без выходных</div>"
+											 data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79032506104'>+7 (903) 250-61-04</a></div><div class='contact-address__text'>ул. Фестивальная 2А, ТЦ &quot;Интер Север&quot;</div>">Речной
+											вокзал</a>
+									</div>
+
+
+									<div class="contact-metro__field">
+										<a href="#" data-coords="55.80704832948,37.517075203705"
+											 class="contact-metro__link js-contact-metro__link"
+											 data-metro="<span class='contact-address__button'>Сокол</span><div class='contact-address__text contact-address__text_color'>с 9:00 до 21:00 без выходных</div>"
+											 data-text="<div class='contact-address__text'>Ломбард: <a href='tel:+79031582362'>+7 (903) 158-23-62</a></div><div class='contact-address__text'>Ленинградский проспект, 74А </div>">Сокол</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- /.contact-metro -->
+					</div>
+
+					<div id="map" class="map"></div>
+					<div class="contact__footer">
+						<div class="contact__row">
+							<div class="contact__cell">
+								<div class="contact__title">Как до нас добраться</div>
+								<div class="contact__text">
+									Станция метро Аэропорт. Первый вагон из центра. По лестнице наверх,
+									затем налево. Из стеклянных дверей направо и прямо по тоннелю.
+									После выхода из метро пройти сквозь ТЦ "Галерея Аэропорт" прямо
+									до магазина "Добрынинский". Внутри "Добрынинский" повернуть направо.
+								</div>
+							</div>
+							<div class="contact__cell">
+								<picture>
+									<source srcset="images/web/contact-footer.webp" type="image/webp">
+									<source srcset="images/web/contact-footer.jpg" type="image/jpeg">
+									<img src="images/web/contact-footer.jpg" alt="">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END WORKAREA -->
+
+			</div>
+			<!-- /.content -->
+
+		</div>
+		<!-- /.middle__container -->
+	</div>
+	<!-- /.middle -->
+
+</div>
+<!-- /.wrapper -->
+
+<script type="text/javascript" src="js/maps.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?
+
+$GLOBALS["SITE_ID"] = "s1";
+$GLOBALS["IBLOCK_TYPE"] = "catalog";
+$GLOBALS["CATALOG_GROUP_ID"] = 1;
+$GLOBALS["CATALOG_STORE_CODE"] = "MSK";
+
+
+
+$GLOBALS["TYPEPREFIX_CODE"] = "YM_TYPEPREFIX";
+$GLOBALS["BRAND_CODE"] = "BRAND";
+$GLOBALS["MODEL_CODE"] = "MODEL";
+$GLOBALS["ART_CODE"] = "ARTICLE";
+$GLOBALS["EAN_CODE"] = "EAN13";
+
+$GLOBALS["SITE_NAME"] = 'Первый ювелирный';
+$GLOBALS["SITE_COMPANY"] = 'Первый ювелирный';
+$GLOBALS["SITE_URL"] = 'http://lomb.medianation.ru';
+$GLOBALS["YM_TAG"] = 'lombard_market';
+
+$GLOBALS["BRANDS_IBLOCK_ID"] = 171;
+$GLOBALS["COLORS_IBLOCK_ID"] = 196;
+$GLOBALS["CATEGORIES_IBLOCK_ID"] = null;
+$GLOBALS["LABELS_IBLOCK_ID"] = 437;
+
+$notShowProp = array(
+	"LIKED",
+	"POPULAR",
+	"IS_MENU",
+	"HOLIDAY",
+	"OFFICE",
+	"ARTICLE",
+
+);
+?>
